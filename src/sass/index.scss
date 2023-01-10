@@ -1,2 +1,15 @@
 @import './common';
+@import './utils/breakepoints';
+@import './utils/base';
+@import './utils/variables';
+@import './components/hero';
+@import './components/products';
+@import './components/about';
+@import './components/advantages';
+@import './components/gallery';
+@import './components/customer';
+@import './components/contacts';
+@import './components/footer';
+@import './components/mobile-menu.scss';
+@import './components/modal.scss';
 @import './example';
