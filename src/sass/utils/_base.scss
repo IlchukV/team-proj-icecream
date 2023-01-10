@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+    // letter-spacing: 0.03em;
+    // font-family: 'Roboto', sans-serif;
+
+    // background-color: $background-color;
+    // color: $text-main-color;
+}
+
+textarea {
+    resize: none;
+}
+
+.container {
+
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        width: 480px;
+    }
+
+
+    @media screen and (min-width: $tablet) {
+        width: 768px;
+
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+    }
+}
