@@ -1,0 +1,31 @@
+// resets
+
+.footer {
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg {
+    background-color: #84A178;
+}
+
+.footer__btn {
+    width: 196px;
+    height: 42px;
+    background-color: $link-button-color;
+    border-radius: 10px;
+    
+    &--franchise {
+        background-color: transparent;
+        border-color: $link-button-color;       
+    }
+}
+
+.footer__titles {
+    color: $text-title-color;
+}
