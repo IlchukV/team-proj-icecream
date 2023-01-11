@@ -26,9 +26,10 @@ textarea {
 
 .container {
 
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+        // width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
 
     @media screen and (max-width: 767px) {
         width: 480px;
@@ -43,4 +44,31 @@ textarea {
     @media screen and (min-width: $desktop) {
         width: 1200px;
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }
