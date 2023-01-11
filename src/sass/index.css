@@ -12,7 +12,11 @@ html {
 body {
   margin: 0;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  font-family: "Montserrat", sans-serif;
+  background-color: #817C7C;
+  color: #131313;
 }
 
 textarea {
