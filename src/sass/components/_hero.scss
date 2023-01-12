@@ -1,0 +1,202 @@
+.hero {
+  background-color: #84a178;
+  padding-top: 50px;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+  }
+}
+
+.combination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.combination__title {
+  max-width: 247px;
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-size: 26px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  color: $text-title-color;
+
+  & span {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    max-width: 367px;
+    margin-bottom: 28px;
+    & span {
+      font-size: 38px;
+    }
+  }
+}
+.button-products {
+  padding: 11px 26px;
+  margin-right: 12px;
+  border-radius: 10px;
+  border: 2px solid $link-button-color;
+  background-color: transparent;
+
+  color: $text-main-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  font-family: inherit;
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 34px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  &:hover,
+  &:focus {
+    border: 2px solid #0a8817;
+  }
+  &:focus {
+    color: $text-title-color;
+  }
+}
+
+.button-about {
+  font-size: 12px;
+  line-height: 1.25;
+  font-family: inherit;
+  text-decoration-line: underline;
+  color: $link-button-color;
+  background-color: transparent;
+  border: none;
+
+  @media screen and (min-width: 1200px) {
+    padding: 12px 22px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  &:hover {
+    color: #0a8817;
+  }
+  &:focus {
+    color: $text-title-color;
+  }
+  &:disabled {
+    color: #ababab;
+  }
+}
+
+.combination__right {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    list-style: none;
+  }
+}
+.combination__number {
+  @media screen and (min-width: 768px) {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+  }
+}
+.combination__text {
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: right;
+    color: $text-title-color;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.combination__item:first-child {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+
+.exposition {
+  position: relative;
+  display: flex;
+
+  // background-image: url(/src/images/dots.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+}
+.exposition__left {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 1px;
+    bottom: 63px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.exposition__image {
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 152px;
+    height: 152px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    height: 225px;
+  }
+}
+.exposition__text {
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+    max-width: 139px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.42;
+    color: $text-title-color;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 200px;
+    margin-left: 16px;
+    font-size: 13px;
+  }
+}
+.exposition__icon {
+  margin-top: 24px;
+}
+.exposition__right {
+  position: absolute;
+  right: 76px;
+  bottom: 0px;
+
+  width: 450px;
+  height: 560px;
+}
