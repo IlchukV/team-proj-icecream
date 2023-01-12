@@ -1,4 +1,29 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.icon {
+  fill: currentColor;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -15,7 +40,6 @@ body {
   line-height: 1.76;
   letter-spacing: 0.04em;
   font-family: "Montserrat", sans-serif;
-  background-color: #817C7C;
   color: #131313;
 }
 
@@ -69,4 +93,9 @@ img {
   padding: 0;
   margin: 0;
   text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  background-color: #84A178;
 }/*# sourceMappingURL=index.css.map */

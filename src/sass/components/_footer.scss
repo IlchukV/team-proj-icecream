@@ -1,0 +1,137 @@
+
+.footer {
+    background-color: #84A178;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-cards {
+    margin-bottom: 20px;
+}
+
+.footer-cards__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 16px;
+}
+
+.footer-cards__item {
+    width: 280px;
+    height: 412px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-left: 32px;
+}
+
+.footer-cards__title {
+    display: flex;
+    width: 80px;
+    padding: 4px 22px;
+    background-color: $link-button-color;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: $text-main-color;
+    border-radius: 4px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__btns {
+    display: flex;
+    margin-bottom: 60px;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__btn {
+    display: block;
+    width: 196px;
+    height: 42px;
+    padding: 0;
+    color: $text-main-color;
+    background-color: $link-button-color;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    border: 2px solid $link-button-color;
+    border-radius: 10px;
+}
+
+.footer__btn--color {
+    background-color: transparent;
+}
+
+.footer__titles {
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    color: $text-title-color;
+    margin-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__title {
+    width: 240px;
+}
+
+.footer__title--big-font {
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.footer-contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.footer-contacts__soc-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-contacts__soc-links-item {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $link-button-color;
+}
+
+.footer-contacts__tel {
+    color: $text-title-color;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+}
+
+.footer-contacts__tel-title {
+    color: $text-main-color;
+}
+
+.footer-autors {
+    position: relative;
+
+    padding: 20px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #7A7A7A;
+    background-color: #84A178;
+    text-align: center;
+    border-top: 1px solid #E1E1E1;
+}
