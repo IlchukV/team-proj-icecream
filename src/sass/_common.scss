@@ -1,1 +1,25 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.link {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.icon {
+    fill: currentColor;
+}
