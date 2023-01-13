@@ -47,8 +47,8 @@
 .products__list {
     padding-top: 108px;
     width: 280px;
-    // margin-right: auto;
-    // margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 
     @media screen and (min-width:480px) {
         width: 250px;        
@@ -115,7 +115,6 @@
     height: 211px;
     display: block;
     transform: translateX(-50%);
-    /* background-position: 0 -1px; */
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 50%;
@@ -143,19 +142,19 @@
 }
 
 .products__item:nth-child(1)::before {
-    background-image: url(../images/creambrule.jpg), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    background-image: url(../images/dobleice.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
     background-color: #D9D9D9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 }
 
 .products__item:nth-child(2)::before {
-    background-image: url(../images/milkshake.jpg), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    background-image: url(../images/milkshake.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
     background-color: #D9D9D9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 }
 
 .products__item:nth-child(3)::before {
-    background-image: url(../images/chocolateice.jpg), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    background-image: url(../images/creambrule.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
     background-color: #D9D9D9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 }
@@ -215,47 +214,3 @@
 
 
 
-
-// Дасвідос
-
-.products__primary {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    margin-top: 200px;
-    border: 1px solid tomato;
-}
-
-.products__primary::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: -180px;
-    width: 302px;
-    height: 318px;
-    display: block;
-    transform: translateX(-50%);
-    /* background-position: 0 -1px; */
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 50%;
-    background-image: url(../images/milkshake.jpg), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
-    background-color: #D9D9D9;
-    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-}
-
-
-
-.products__secondary {
-    background-image: url(../images/korovka.jpg), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
-    background-repeat: no-repeat;
-    background-position: 0 39px, 0;
-    background-size: contain;
-    width: 490px;
-    height: 529px;
-    margin-top: 200px;
-    background-color: #D9D9D9;
-    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-    border-radius: 250px;
-}
