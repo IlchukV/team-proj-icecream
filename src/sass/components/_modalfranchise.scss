@@ -1,0 +1,39 @@
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left:0;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+     visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
+    opacity: 0;
+}
+
+.fanchise__modal {
+}
+.fanchise__close-btn {
+}
+
+.fanchise__close-icon {
+}
+
+.fanchise__modal-form {
+}
+.modal__label {
+}
+.modal__label-title {
+}
+.form__user {
+}
+.modal__input {
+}
+.modal__feedback {
+}
+.label__title {
+}
+.feedback {
+}
+.submit__btn {
+}
