@@ -49,11 +49,10 @@
         color: $text-main-color;
         height: 30px;
         width: 76px;
-    }
 
-    &_item-city {
-        font-size: 16px;
-        margin-bottom: 32px;
+        &-food {
+            width: 148px;
+        }
     }
 
     &_text {
@@ -70,21 +69,69 @@
         width: 288px;
         padding-bottom: 32px;
         border-bottom: 1px solid rgba(225, 225, 225, 1);
+        font-size: 16px;
+        margin-bottom: 32px;
     }
+
+    &_link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.64;
+        text-decoration: none;
+
+
+        color: $milkshakes-card-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.schedule {
+    margin-bottom: 12px;
+
+    &_days {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.82;
+
+        color: $text-main-color;
+    }
+
+    &_time {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.86;
+
+        color: #ABABAB;
+        padding-bottom: 32px;
+    }
+}
+
+.company_contacts {
+    border-top: 1px solid rgba(171, 171, 171, 1);
+    width: 288px;
+
+    padding-top: 32px;
+
 
 }
 
-.contacts_link {
+.company_tel {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.64;
+    line-height: 1.5;
+    color: $text-main-color;
+
     text-decoration: none;
+}
 
+.company_mail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $text-main-color;
 
-    color: $milkshakes-card-color;
-
-    &:hover {
-        text-decoration: underline;
-    }
-
+    text-decoration: none;
 }
