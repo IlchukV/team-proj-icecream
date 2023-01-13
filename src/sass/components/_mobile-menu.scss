@@ -4,14 +4,6 @@
     height: 100vh;
     text-align: center;
     padding: 100px 0;
-    @include mobile {
-        width: 100%;
-        height: auto;
-    }
-    @include tablet {
-        width: 100%;
-        height: auto;
-    }
 }
 
 .mobile-menu__logo {
@@ -54,13 +46,13 @@
         color: $text-main-color;
     }
     &:focus {
-        color: #FCFCFC;
+        color: $text-title-color;
     }
     &:disabled {
         color: #ABABAB;
     }
     &:default {
-        color: #F8D24E;
+        color: $link-button-color;
     }
     
 }
@@ -70,7 +62,7 @@
     display: inline-flex;
     align-items: center;
     margin-top: 110px;
-    background: #F8D24E;
+    background: $link-button-color;
     border-radius: 10px;
     padding: 12px 51px 12px 36px;
     border-style: none;
@@ -80,7 +72,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    color: #000000;
+    color: $link-button-color;
     &:hover {
         background-color: #0A8817;
     }
@@ -92,12 +84,13 @@
         background-color: #ABABAB;
     }
     &:default {
-        background-color: #F8D24E;
+        background-color: $link-button-color;
     }
-    
-   
+    @include tablet {
+        display: none;
+    }
 }
-.mobile-menu__svg {
+.mobile-menu__svg  {
     fill: currentColor;
     margin-left: 4px;
 }

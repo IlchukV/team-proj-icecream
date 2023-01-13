@@ -87,18 +87,6 @@ img {
   text-align: center;
   padding: 100px 0;
 }
-@media screen and (min-width: 480px) {
-  .mobile-menu {
-    width: 100%;
-    height: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    width: 100%;
-    height: auto;
-  }
-}
 
 .mobile-menu__logo {
   position: absolute;
@@ -160,7 +148,7 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #000000;
+  color: #F8D24E;
 }
 .mobile-menu__button:hover {
   background-color: #0A8817;
@@ -174,6 +162,11 @@ img {
 }
 .mobile-menu__button:default {
   background-color: #F8D24E;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
 }
 
 .mobile-menu__svg {
