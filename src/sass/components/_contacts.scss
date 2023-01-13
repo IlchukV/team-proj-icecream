@@ -165,6 +165,11 @@
     background-color: #0A8817;
 }
 
+.contacts-button_locations:focus {
+    background-color: #0A8817;
+    color: #FFFFFF;
+}
+
 .button_locations {
     padding: 12px 40px;
     margin-right: 16px;
@@ -181,4 +186,17 @@
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
+
+    &_icon-franchise {
+        fill: #000000;
+    }
+}
+
+.contacts-button_franchise:hover {
+    background-color: #0A8817;
+}
+
+.contacts-button_franchise:focus {
+    background-color: #0A8817;
+    color: #FFFFFF;
 }
