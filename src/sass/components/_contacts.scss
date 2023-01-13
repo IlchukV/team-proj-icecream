@@ -14,8 +14,9 @@
 
     &_list-item {
         display: flex;
-        gap: 32px;
-        margin-bottom: 60px;
+        justify-content: center;
+        // gap: 32px;
+
         transform: translateY(-70px);
 
 
@@ -29,8 +30,6 @@
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 40px;
-        // margin-left: 40px;
-        // margin-right: 66px;
     }
 
     &_item-type {
@@ -58,6 +57,34 @@
     }
 
     &_text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.66;
+
         color: $text-main-color;
+
+        margin-bottom: 8px;
     }
+
+    &_address {
+        width: 288px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(225, 225, 225, 1);
+    }
+
+}
+
+.contacts_link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.64;
+    text-decoration: none;
+
+
+    color: $milkshakes-card-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
 }
