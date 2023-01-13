@@ -1,6 +1,5 @@
 .contacts {
     padding-top: 100px;
-    padding-bottom: 120px;
     position: relative;
 
     &_company {
@@ -19,7 +18,7 @@
 
         transform: translateY(-70px);
 
-
+        margin-bottom: 60px;
     }
 
     &_blocks-item {
@@ -134,4 +133,28 @@
     color: $text-main-color;
 
     text-decoration: none;
+}
+
+.contacts-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -70px;
+
+    &_locations {
+        border: 0;
+        border-radius: 10px;
+        background-color: $link-button-color;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.29;
+        color: $text-main-color;
+        text-align: center;
+    }
+}
+
+.button_locations {
+    padding: 12px 40px;
 }
