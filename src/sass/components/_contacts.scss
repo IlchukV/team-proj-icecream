@@ -1,0 +1,59 @@
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.contacts_company {
+    visibility: hidden;
+    position: absolute;
+}
+
+.contacts_list {
+    background-color: $background-color-section-contacts;
+}
+
+.contacts_list-item {
+    transform: translateY(-70px);
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.contacts_blocks-item {
+    width: 368px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    // margin-left: 40px;
+    // margin-right: 66px;
+}
+
+.contacts_item-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    border-radius: 6px;
+    background-color: $link-button-color;
+    color: $text-main-color;
+    height: 30px;
+    width: 76px;
+}
+
+.contacts_item-city {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.contacts_text {}
