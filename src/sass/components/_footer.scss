@@ -115,8 +115,6 @@
 
 .footer-contacts__soc-links-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -124,7 +122,13 @@
     }
 
     .footer-contacts__soc-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         fill: $background-color-secondary;
+        transition: fill 250ms linear;
 
         &:hover,
         &:focus {
