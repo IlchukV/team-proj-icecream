@@ -24,24 +24,39 @@ textarea {
 }
 
 .container {
-
-        // width: 100%;
+font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+        width: 100%;
         padding-left: 15px;
         padding-right: 15px;
         margin: 0 auto;
+}
 
-    @media screen and (max-width: 767px) {
-        width: 480px;
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content;
     }
+}
 
-
-    @media screen and (min-width: $tablet) {
-        width: 768px;
-
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
     }
+}
 
-    @media screen and (min-width: $desktop) {
-        width: 1200px;
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin retina {
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        @content;
     }
 }
 
