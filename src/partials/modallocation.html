@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="backdrop is-hidden" data-modal>
+        <div class="modal-location">
+            <button class="modal-location__close" data-modal-close>
+                <svg width="24" height="24" class="modal-location__icon">
+                    <use href="./images/symbol-defs.svg#clarity_close-line"></use>
+                </svg>
+            </button>
+            <form class="location-form">
+                <p class="location-form__title">Our Locations</p> 
+                
+                <picture>
+                    <source media="(min-width: 768px)"
+                                srcset=".//../images/position_tablet.jpg 1x, .//../images/position_tablet@2x.jpg 2x">
+                    <source media="(max-width: 767px)"
+                                srcset=".//../images/position.jpg 1x, .//../images/position@2x.jpg">
+                                <img src=".//../images/position.jpg" class="modal-form__location-image">
+                </picture>
+                    <div class="location-form__btn">
+                        <a href="https://www.google.com/maps/place/%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0,+%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+36000/@49.5945325,34.5200581,13.5z/data=!4m5!3m4!1s0x40d825e425e6ba6b:0xcf3e6bdfb9e4ca82!8m2!3d49.588267!4d34.5514169" class="location-form__button link" type="button">
+                    Open map
+                        </a>
+                    </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
