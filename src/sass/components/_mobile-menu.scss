@@ -42,6 +42,7 @@
     line-height: 1.21;
     color: $text-title-color;
     text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         color: $text-main-color;
     }
@@ -73,6 +74,7 @@
     font-size: 14px;
     line-height: 1.21;
     color: $text-main-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
     &:hover {
         background-color: #0A8817;
     }

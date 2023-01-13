@@ -121,6 +121,7 @@ img {
   line-height: 1.21;
   color: #FCFCFC;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__link:hover {
   color: #131313;
@@ -149,6 +150,7 @@ img {
   font-size: 14px;
   line-height: 1.21;
   color: #131313;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__button:hover {
   background-color: #0A8817;
