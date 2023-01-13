@@ -69,6 +69,11 @@
     &:default {
         color: $link-button-color;
     }
+    @include tablet {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.23;
+    }
     
 }
 
@@ -99,9 +104,7 @@
     &:default {
         background-color: $link-button-color;
     }
-    @include tablet {
-        display: none;
-    }
+   
 }
 .mobile-menu__svg  {
     fill: currentColor;
