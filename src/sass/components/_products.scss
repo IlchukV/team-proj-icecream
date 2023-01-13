@@ -5,8 +5,24 @@
     color: $text-main-color;
     text-align: center;
     letter-spacing: 0.04em;
-    background-image: url(../images/Backgroud_desktop.jpg);
-
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/Backgroud_mobile.jpg);
+    @include retina {
+        background-image: url(../images/Backgroud_mobile@2x.jpg);
+    }
+    @media screen and (min-width:768px) {
+        background-image: url(../images/Background_tablet.jpg);
+        @include retina {
+            background-image: url(../images/Background_tablet@2x.jpg);
+        }    
+    }
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/Backgroud_desktop.jpg);
+        @include retina {
+            background-image: url(../images/Backgroud_desktop@2x.jpg);
+        }    
+    }  
 }
 
 .products__label {
@@ -53,12 +69,10 @@
     @media screen and (min-width:480px) {
         width: 250px;        
     }
-
     @media screen and (min-width:768px) {
         display: flex;
         padding-top: 120px;
-        width: 704px;
-        
+        width: 704px; 
     }
     @media screen and (min-width:1200px) {
         padding-top: 183px;
@@ -76,7 +90,11 @@
     width: 100%;
 
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    transition: box-shadow 250ms linear;
     border-radius: 24px;
+    &:hover, &:focus {
+        box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25), 0px 8px 30px rgba(0, 0, 0, 0.25);
+    }
 
     @media screen and (min-width:480px) {
         padding-top: 126px;
@@ -143,18 +161,45 @@
 
 .products__item:nth-child(1)::before {
     background-image: url(../images/dobleice.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    @include retina {
+        background-image: url(../images/dobleice@2x.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+    }
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/dobleice_desktop.png),linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+        @include retina {
+            background-image: url(../images/dobleice_desktop@2x.png), linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
+        }    
+    }  
     background-color: #D9D9D9;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 }
 
 .products__item:nth-child(2)::before {
     background-image: url(../images/milkshake.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    @include retina {
+        background-image: url(../images/milkshake@2x.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    }
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/milkshake_desktop.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        @include retina {
+            background-image: url(../images/milkshake_desktop@2x.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+        }    
+    }  
     background-color: #D9D9D9;
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
 }
 
 .products__item:nth-child(3)::before {
     background-image: url(../images/creambrule.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    @include retina {
+        background-image: url(../images/creambrule@2x.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+    @media screen and (min-width:1200px) {
+        background-image: url(../images/creambrule_desktop.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+        @include retina {
+            background-image: url(../images/creambrule_desktop@2x.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+        }    
+    }
     background-color: #D9D9D9;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
 }
@@ -199,16 +244,16 @@
     @media screen and (min-width:1200px) {
         bottom: 60px;
     }
+    &:active {
+        color:#907E82;
+    }
+    &:hover .products__icon, &:focus .products__icon {
+        scale: 1.5;    
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
+.products__icon {
+    scale: 1;
+    transition: scale 250ms linear;
+}
 
