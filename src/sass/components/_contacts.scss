@@ -143,22 +143,42 @@
     margin-top: -70px;
 
     &_locations {
+        width: 196px;
+        height: 42px;
+        cursor: pointer;
         border: 0;
         border-radius: 10px;
         background-color: $link-button-color;
-
         font-weight: 600;
         font-size: 14px;
         line-height: 1.29;
-        color: $text-main-color;
         text-align: center;
+    }
+
+
+    &_icon-locations {
+        fill: #000000;
     }
 }
 
-.button_locations {
-    padding: 12px 7px 12px 40px;
+.contacts-button_locations:hover {
+    background-color: #0A8817;
 }
 
-.contacts-button_icon-locations {
-    padding-left: 16px;
+.button_locations {
+    padding: 12px 40px;
+    margin-right: 16px;
+}
+
+.contacts-button_franchise {
+    width: 196px;
+    height: 42px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    background-color: $link-button-color;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
 }
