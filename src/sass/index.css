@@ -82,20 +82,20 @@ img {
 
 .mobile-menu {
   background-color: #85A279;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   text-align: center;
   padding: 100px 0;
 }
 @media screen and (min-width: 480px) {
   .mobile-menu {
-    width: 450px;
+    width: 100%;
     height: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
-    width: 768px;
+    width: 100%;
     height: auto;
   }
 }
