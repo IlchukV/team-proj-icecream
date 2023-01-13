@@ -114,11 +114,24 @@
 }
 
 .footer-contacts__soc-links-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 34px;
     height: 34px;
     border-radius: 50%;
     background-color: $link-button-color;
-}
+    }
+
+    .footer-contacts__soc-link {
+        fill: $background-color-secondary;
+
+        &:hover,
+        &:focus {
+            fill: #ffffff;
+        }
+        
+    }
 
 .footer-contacts__tel {
     color: $text-title-color;
