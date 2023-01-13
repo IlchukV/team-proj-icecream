@@ -1,16 +1,48 @@
 .mobile-menu {
     background-color: #85A279;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     text-align: center;
     padding: 100px 0;
+    @include mobile {
+        width: 450px;
+        height: auto;
+    }
+    @include tablet {
+        width: 768px;
+        height: auto;
+    }
 }
 
-.mobile-menu__items:not(:last-child) {
-        margin-bottom: 32px;
-    }
+.mobile-menu__logo {
+    position: absolute;
+    top: 12px;
+    left: 32px;
+}
 
-.mobile-menu__items > a {
+.mobile-menu__close {
+    padding: 0;
+    background-color: #85A279;
+    fill: $text-title-color;
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 26px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    
+    
+}
+
+
+.mobile-menu__items:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile-menu__link {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -19,7 +51,7 @@
     color: $text-title-color;
     text-decoration: none;
     &:hover {
-        color: #0A8817;
+        color: $text-main-color;
     }
     &:focus {
         color: #FCFCFC;
@@ -35,12 +67,13 @@
 
 
 .mobile-menu__button {
+    display: inline-flex;
+    align-items: center;
     margin-top: 110px;
     background: #F8D24E;
     border-radius: 10px;
     padding: 12px 51px 12px 36px;
     border-style: none;
-    
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -53,7 +86,7 @@
     }
     &:focus {
         background-color: #0A8817;
-        color: #FFFFFF;
+        color: $text-title-color;
     }
     &:disabled {
         background-color: #ABABAB;
@@ -63,4 +96,8 @@
     }
     
    
+}
+.mobile-menu__svg {
+    fill: currentColor;
+    margin-left: 4px;
 }
