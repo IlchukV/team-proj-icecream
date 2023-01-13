@@ -154,6 +154,7 @@
 }
 
 .footer-autors {
+    position: relative;
     display: flex;
     padding: 20px 0px;
     font-weight: 700;
@@ -161,7 +162,6 @@
     line-height: 1.5;
     color: #7A7A7A;
     background-color: $background-color-secondary;
-    border-top: 1px solid #E1E1E1;
     justify-content: center;
     
     @include mobile {
@@ -175,6 +175,21 @@
 
     @include desktop {
         width: 1200px;
+        
+    }
+}
+
+.footer-autors::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E1E1E1;
+
+    @include desktop {
+        width: 1167px;
     }
 }
 
