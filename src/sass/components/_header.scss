@@ -2,14 +2,13 @@
   position: relative;
 }
 .header-page {
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding-top: 14px;
   background-color: $background-color-secondary;
   @include mobile {
-    width: 480px;
     padding-top: 20px;
   }
   @include tablet {

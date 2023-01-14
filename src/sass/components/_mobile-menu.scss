@@ -1,23 +1,28 @@
 .js-menu-container {
   position: absolute;
   top: 0px;
-  left: 0px;
-  right: 0px;
+  right: -100%;
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  display: none;
   position: fixed;
   background-color: $mobile-button-color;
   text-align: center;
   padding: 100px 0;
+  overflow-y: scroll;
+
+  transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include desktop {
     display: none;
   }
 }
 .js-menu-container.is-open {
-  display: block;
+  right: 0;
 }
+body.js-menu-container.is-open {
+  overflow: hidden;
+}
+
 
 .mobile-menu__logo {
   position: absolute;
