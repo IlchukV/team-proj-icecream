@@ -36,9 +36,14 @@
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scaleX(1.5);
     }
+    
+    @include tablet{
+        min-width: 280px;
+        max-height: 674px;
+    }
 
     @include desktop {
-        min-width: 568px;
+        width: 568px;
         min-height: 668px;
     }
 }
@@ -67,14 +72,14 @@
 }
 
 .fanchise__modal-title{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(24/16);
     letter-spacing: .03em;
-    text-align: center;
-    margin-top: 28px;
-    color: $text-main-color;
-    flex-wrap: wrap;
+        text-align: center;
+        color: $text-main-color;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 20px;
 
     @include desktop{
             font-weight: 400;
@@ -84,7 +89,7 @@
             // align-items: center;
             // text-align: center;
             color: $text-main-color;
-            margin-top: 32px;
+            margin-bottom: 24px;
     }
 }
 
@@ -94,14 +99,16 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    padding: 20px 30px 24px 28px;
 
         @include desktop{
             font-size: 16px;
             align-items: center;
             text-align: center;
-            padding: 24px 60px 32px;
         }
+}
+
+.fanchise__modal-form{
+    margin-top: 20px;
 }
 
 
@@ -131,4 +138,12 @@
 .feedback {
 }
 .submit__btn {
+    font-weight: 600;
+        font-size: 12px;
+        line-height: calc(15/12);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $text-main-color;
+        
 }
