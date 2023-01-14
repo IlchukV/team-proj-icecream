@@ -26,8 +26,9 @@
     background: $text-title-color;
     border: 2px solid $link-button-color;
     border-radius: 10px;
-    top: 50px;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     overflow: auto;
     min-width: 100%;
     max-height: 674px;
@@ -37,7 +38,7 @@
         transform: translate(-50%, -50%) scaleX(1.5);
     }
     
-    @include tablet{
+    @include mobile{
         min-width: 280px;
         max-height: 674px;
     }
@@ -118,11 +119,8 @@
         flex-direction: column;
     
         &:nth-of-type(4n) {
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
-}
-
-.modal__label-title {
 }
 
 .form__user {
@@ -133,8 +131,7 @@
 
 .modal__feedback {
 }
-.label__title {
-}
+
 .feedback {
 }
 .submit__btn {
@@ -145,5 +142,17 @@
         align-items: center;
         text-align: center;
         color: $text-main-color;
-        
+        width: 114px;
+        height: 42px;
+        background: $link-button-color;
+        border-radius: 10px;
+        border: none;
+        padding: 12px 34px;
+        margin: 0 auto;
+        transition:
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: $hover-button-color;
+            }
 }
