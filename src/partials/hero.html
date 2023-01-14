@@ -1,15 +1,13 @@
 <section class="hero">
-  <div class="container">
+  <div class="container hero-page">
     <div class="combination">
       <div class="caption">
-        <h1 class="caption__title">
-          ice cream made with <span>passion</span>
-        </h1>
+        <h1 class="caption__title">ice cream made with <span>passion</span></h1>
         <button type="button" class="button-products btn">Products</button>
         <button type="button" class="button-about btn">How it’s made?</button>
       </div>
 
-      <ul class="quantity">
+      <ul class="quantity list">
         <li class="quantity__item">
           <span class="quantity__number">16</span>
           <p class="quantity__text">cafes</p>
@@ -21,74 +19,79 @@
       </ul>
     </div>
 
-    <div class="depiction">
-      <picture class="depiction__background">
+    <picture class="depiction__background">
+      <source
+        srcset="./images/dots_desktop.png, ./images/dots_desktop@2x.png"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/dots_tablet.png, ./images/dots_tablet@2x.png"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./images/dots_480.png, ./images/dots_480@2x.png"
+        media="(min-width:480px)"
+      />
+      <img
+        srcset="./images/dots_mobile.png, ./images/dots_mobile@2x.png"
+        src="./images/dots_mobile.png"
+        alt=""
+        class="depiction__img"
+      />
+    </picture>
+
+    <picture class="depiction-right">
+      <source
+        srcset="./images/icecream_desktop.png, ./images/icecream_desktop@2x.png"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/icecream_tablet.png, ./images/icecream_tablet@2x.png"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./images/icecream_480.png, ./images/icecream_480@2x.png"
+        media="(min-width:480px)"
+      />
+      <img
+        srcset="./images/icecream_mobile.png, ./images/icecream_mobile@2x.png"
+        src="./images/icecream_mobile.png"
+        alt=""
+      />
+    </picture>
+
+    <div class="depiction-left">
+      <picture>
         <source
-          srcset="./images/dots_desktop.png, ./images/dots_desktop@2x.png"
+          srcset="./images/bublice_desktop.png, ./images/bublice_desktop@2x.png"
           media="(min-width:1200px)"
         />
         <source
-          srcset="./images/dots_tablet.png, ./images/dots_tablet@2x.png"
+          srcset="./images/bublice_tablet.png, ./images/bublice_tablet@2x.png"
           media="(min-width:768px)"
         />
-        <source
-          srcset="./images/dots_480.png, ./images/dots_480@2x.png"
-          media="(min-width:480px)"
-        />
         <img
-          srcset="./images/dots_mobile.png, ./images/dots_mobile@2x.png"
-          src="./images/dots_mobile.png"
+          srcset="./images/bublice_tablet.png, ./images/bublice_tablet@2x.png"
+          src="./images/bublice_tablet.png"
           alt=""
-          class="depiction__img"
+          class="depiction-left__image"
         />
       </picture>
-      
-      <div class="depiction-left">
-        <picture>
-          <source
-            srcset="./images/bublice_desktop.png, ./images/bublice_desktop@2x.png"
-            media="(min-width:1200px)"
-          />
-          <source
-            srcset="./images/bublice_tablet.png, ./images/bublice_tablet@2x.png"
-            media="(min-width:768px)"
-          />
-          <img
-            srcset="./images/bublice_tablet.png, ./images/bublice_tablet@2x.png"
-            src="./images/bublice_tablet.png"
-            alt=""
-            class="depiction-left__image"
-          />
-        </picture>
+      <div class="depiction-left__description">
         <p class="depiction-left__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
+        <button
+          type="button"
+          class="depiction-left__btn btn"
+          data-modal-ingred-open
+        >
+          <svg class="depiction-left__icon" width="40" height="16">
+            <use href="./images/symbol-defs.svg#icon-rrow"></use>
+          </svg>
+        </button>
       </div>
-
-      <picture class="depiction-right">
-        <source
-          srcset="
-            ./images/icecream_desktop.png,
-            ./images/icecream_desktop@2x.png
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="./images/icecream_tablet.png, ./images/icecream_tablet@2x.png"
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="./images/icecream_480.png, ./images/icecream_480@2x.png"
-          media="(min-width:480px)"
-        />
-        <img
-          srcset="./images/icecream_mobile.png, ./images/icecream_mobile@2x.png"
-          src="./images/icecream_mobile.png"
-          alt=""
-          
-        />
-      </picture>
     </div>
   </div>
 </section>
