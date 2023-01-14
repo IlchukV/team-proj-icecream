@@ -1,0 +1,119 @@
+.header {
+  background-color: #84a178;
+}
+.header-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14px;
+  @include tablet {
+    padding-top: 20px;
+  }
+  @include desktop {
+    padding-top: 8px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-right: 32px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  @include desktop {
+    display: none;
+  }
+}
+.menu-button .icon-menu {
+  display: none;
+}
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+.menu-button.is-open .icon-close {
+  display: none;
+}
+
+.navigation {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: $text-title-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $link-button-color;
+  }
+}
+
+.header-page__button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 36px;
+  color: #000;
+  background-color: $link-button-color;
+  border-radius: 10px;
+  border-style: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.21;
+  cursor: pointer;
+
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $hover-button-color;
+  }
+  &:focus {
+    background-color: $hover-button-color;
+    color: $text-title-color;
+  }
+  &:default {
+    background-color: $link-button-color;
+  }
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+.header-page__icon {
+  fill: currentColor;
+  margin-left: 4px;
+}
