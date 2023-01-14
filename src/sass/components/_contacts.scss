@@ -6,6 +6,10 @@
         padding-top: 40px;
     }
 
+    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+        padding-top: 80px;
+    }
+
     &_company {
         visibility: hidden;
         position: absolute;
@@ -25,6 +29,12 @@
         @media screen and (max-width: 767.95px) {
             display: block;
             margin-bottom: 24px;
+            transform: translateY(-375px);
+        }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            gap: 16px;
+            margin-bottom: 40px;
         }
     }
 
@@ -41,12 +51,20 @@
             width: 280px;
             margin-left: auto;
             margin-right: auto;
+            padding-bottom: 24px;
+            padding-left: 32px;
         }
 
         &:not(:last-child) {
             @media screen and (max-width: 767.95px) {
                 margin-bottom: 20px;
             }
+        }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            width: 224px;
+            padding-left: 24px;
+            padding-bottom: 40px;
         }
     }
 
@@ -91,20 +109,28 @@
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
         }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
     }
 
     &_address {
         width: 288px;
         padding-bottom: 32px;
         border-bottom: 1px solid rgba(225, 225, 225, 1);
-        margin-bottom: 32px;
+        // margin-bottom: 32px;
 
         @media screen and (max-width: 767.95px) {
             width: 195px;
             padding-bottom: 24px;
-            margin-bottom: 24px;
+            // margin-bottom: 24px;
         }
 
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            width: 173px;
+        }
     }
 
     &_link {
@@ -123,19 +149,27 @@
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
         }
-    }
 
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            font-size: 14px;
+        }
+    }
 
 }
 
 .work-schedule {
-    margin-bottom: 24px;
+    padding-top: 32px;
+
+    @media screen and (max-width: 767.95px) {
+        padding-top: 24px;
+
+    }
 }
 
 .schedule {
     margin-bottom: 12px;
 
-    @media screen and (max-width: 767.95px) {
+    @media screen and (max-width: 1199.95px) {
         margin-bottom: 8px;
     }
 
@@ -149,6 +183,10 @@
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
         }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            font-size: 14px;
+        }
     }
 
     &_time {
@@ -161,6 +199,10 @@
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
         }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -169,10 +211,13 @@
     width: 288px;
 
     padding-top: 32px;
-    margin-bottom: 6px;
 
     @media screen and (max-width: 767.95px) {
         width: 195px;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+        width: 170px;
     }
 }
 
@@ -188,6 +233,11 @@
         font-size: 12px;
         line-height: 1.58;
     }
+
+    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 
 .company_mail {
@@ -202,6 +252,11 @@
         font-size: 12px;
         line-height: 1.58;
     }
+
+    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 
 .contacts-button {
@@ -214,6 +269,7 @@
     @media screen and (max-width: 767.95px) {
         flex-direction: column;
         text-align: center;
+        margin-top: -375px;
     }
 
     &_locations {
