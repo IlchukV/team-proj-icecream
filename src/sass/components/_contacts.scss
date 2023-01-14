@@ -24,6 +24,7 @@
 
         @media screen and (max-width: 767.95px) {
             display: block;
+            margin-bottom: 24px;
         }
     }
 
@@ -40,11 +41,16 @@
             width: 280px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
         }
 
-
+        &:not(:last-child) {
+            @media screen and (max-width: 767.95px) {
+                margin-bottom: 20px;
+            }
+        }
     }
+
+
 
     &_item-type {
         display: flex;
@@ -67,28 +73,38 @@
         &-food {
             width: 148px;
         }
+
+        @media screen and (max-width: 767.95px) {
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
     }
 
     &_text {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.66;
-
         color: $text-main-color;
-
         margin-bottom: 8px;
+
+        @media screen and (max-width: 767.95px) {
+            font-size: 12px;
+        }
     }
 
     &_address {
         width: 288px;
         padding-bottom: 32px;
         border-bottom: 1px solid rgba(225, 225, 225, 1);
-        font-size: 16px;
         margin-bottom: 32px;
 
         @media screen and (max-width: 767.95px) {
-            width: 190px;
+            width: 195px;
+            padding-bottom: 24px;
+            margin-bottom: 24px;
         }
+
     }
 
     &_link {
@@ -103,11 +119,25 @@
         &:hover {
             text-decoration: underline;
         }
+
+        @media screen and (max-width: 767.95px) {
+            font-size: 12px;
+        }
     }
+
+
+}
+
+.work-schedule {
+    margin-bottom: 24px;
 }
 
 .schedule {
     margin-bottom: 12px;
+
+    @media screen and (max-width: 767.95px) {
+        margin-bottom: 8px;
+    }
 
     &_days {
         font-weight: 500;
@@ -115,6 +145,10 @@
         line-height: 1.82;
 
         color: $text-main-color;
+
+        @media screen and (max-width: 767.95px) {
+            font-size: 12px;
+        }
     }
 
     &_time {
@@ -123,17 +157,23 @@
         line-height: 1.86;
 
         color: #ABABAB;
-        padding-bottom: 32px;
+
+        @media screen and (max-width: 767.95px) {
+            font-size: 12px;
+        }
     }
 }
 
 .company_contacts {
-    border-top: 1px solid rgba(171, 171, 171, 1);
+    border-top: 1px solid #E1E1E1;
     width: 288px;
 
     padding-top: 32px;
+    margin-bottom: 6px;
 
-
+    @media screen and (max-width: 767.95px) {
+        width: 195px;
+    }
 }
 
 .company_tel {
@@ -143,6 +183,11 @@
     color: $text-main-color;
 
     text-decoration: none;
+
+    @media screen and (max-width: 767.95px) {
+        font-size: 12px;
+        line-height: 1.58;
+    }
 }
 
 .company_mail {
@@ -152,6 +197,11 @@
     color: $text-main-color;
 
     text-decoration: none;
+
+    @media screen and (max-width: 767.95px) {
+        font-size: 12px;
+        line-height: 1.58;
+    }
 }
 
 .contacts-button {
@@ -160,6 +210,11 @@
     align-items: center;
 
     margin-top: -70px;
+
+    @media screen and (max-width: 767.95px) {
+        flex-direction: column;
+        text-align: center;
+    }
 
     &_locations {
         width: 196px;
@@ -196,6 +251,11 @@
 
 .button_locations {
     margin-right: 16px;
+
+    @media screen and (max-width: 767.95px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
 }
 
 .contacts-button_franchise {
