@@ -7,13 +7,12 @@
   @include mobile {
     padding-top: 40px;
     width: 480px;
-    height: 357px;
+    height: 360px;
   }
 
   @include tablet {
     padding-top: 14px;
     width: 768px;
-    height: 349px;
     padding-left: 32px;
     padding-right: 32px;
   }

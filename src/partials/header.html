@@ -7,26 +7,26 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link" href="">Home</a>
+          <a class="navigation__link" href="./index.html">Home</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="">How it’s made?</a>
+          <a class="navigation__link" href="#about">How it’s made?</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="">Our products</a>
+          <a class="navigation__link" href="#products">Our products</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="">Contact</a>
+          <a class="navigation__link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
     <div class="button-container">
       <button
         type="button"
-        class="menu-button is-open"
+        class="btn js-open-menu is-open"
         aria-expanded="false"
-        aria-controls="mobile-menu"
-        data-menu-button
+        aria-controls="js-menu-container"
+        data-js-open-menu
       >
         <svg width="40" height="40" aria-label="Перемикач мобільного меню">
           <use
@@ -40,7 +40,7 @@
         </svg>
       </button>
 
-      <button type="button" class="header-page__button">
+      <button type="button" class="header-page__button btn">
         Buy now
         <svg width="12" height="12" class="header-page__icon">
           <use href="./images/symbol-defs.svg#icon-vector"></use>

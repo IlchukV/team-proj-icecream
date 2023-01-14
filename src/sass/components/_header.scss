@@ -1,47 +1,64 @@
 .header {
-  background-color: #84a178;
+  position: relative;
 }
 .header-page {
+  width: 320px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 14px;
+  background-color: $background-color-secondary;
+  @include mobile {
+    width: 480px;
+    padding-top: 20px;
+  }
   @include tablet {
+    width: 768px;
     padding-top: 20px;
   }
   @include desktop {
+    width: 1200px;
     padding-top: 8px;
   }
 }
-
+.logo {
+  width: 40px;
+  @include mobile {
+    height: 44px;
+  }
+  @include desktop {
+    width: 60px;
+    height: 65px;
+  }
+}
 .button-container {
   display: flex;
   justify-content: center;
 }
 
-.menu-button {
+.js-open-menu {
   display: inline-block;
   padding: 0;
   border: none;
   background-color: transparent;
-  margin-right: 32px;
+
   height: 40px;
   width: 40px;
   cursor: pointer;
+  @include tablet {
+    margin-right: 32px;
+  }
   @include desktop {
     display: none;
   }
 }
-.menu-button .icon-menu {
+.js-open-menu .icon-menu {
   display: none;
 }
-.menu-button.is-open .icon-menu {
+.js-open-menu.is-open .icon-menu {
   display: block;
 }
-.menu-button.is-open .icon-close {
+.js-open-menu.is-open .icon-close {
   display: none;
 }
 
@@ -49,6 +66,7 @@
   display: none;
   @include desktop {
     display: block;
+    margin-bottom: 12px;
   }
 }
 .navigation__list {
@@ -84,7 +102,7 @@
   align-items: center;
   justify-content: center;
   padding: 12px 36px;
-  color: #000;
+  color: $text-main-color;
   background-color: $link-button-color;
   border-radius: 10px;
   border-style: none;
