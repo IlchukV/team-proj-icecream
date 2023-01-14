@@ -1,0 +1,134 @@
+.customer-reviews {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $background-color-secondary;
+    background-image: url(../images/Backgroud_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 767px) {
+        @include retina {
+            & {
+                background-image: url(../images/Backgroud_mobile@2x.jpg);
+            }
+        }
+    }
+    @media screen and (min-width: 768px) {
+        background-image: url(../images/Background_tablet.jpg);
+
+        @include retina {
+            & {
+                background-image: url(../images/Background_tablet@2x.jpg);
+            }
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/Backgroud_desktop.jpg);
+
+        @include retina {
+            & {
+                background-image: url(../images/Backgroud_desktop@2x.jpg);
+            }
+        }
+    }
+}
+
+// .customer-reviews-bg{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 32px;
+//     background-color: $background-color-secondary;   
+// }
+
+.customer-reviews__photo {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 32px auto;
+    border-radius: 50%;
+    background-color: $background-color-secondary;
+    background-size: contain;
+}
+
+// .customer-reviews__photo--emily {
+//     background-image: url(../images/emily.jpg);
+//     @include retina {
+//             & {
+//                 background-image: url(../images/emily@2x.jpg);
+//             }
+// }
+
+// .customer-reviews__photo--bryan {
+//     background-image: url(../images/bryan.jpg);
+//     @include retina {
+//             & {
+//                 background-image: url(../images/bryan@2x.jpg);
+//             }
+// }
+
+// .customer-reviews__photo--diana {
+//     background-image: url(../images/diana.jpg);
+//     @include retina {
+//             & {
+//                 background-image: url(../images/diana@2x.jpg);
+//             }
+// }
+
+.customer-reviews__text {
+    display: block;
+    box-sizing: border-box;
+    width: 280px;
+    margin: 0 auto 32px auto;
+    padding: 35px 39px;
+
+    border-radius: 10px;
+
+    color: $text-title-color;
+    background-color: $background-color-secondary;
+
+    font-size: 12px;
+    line-height: 2.55;
+
+
+    @media screen and (min-width: 768px) {
+        width: 705px;
+        padding: 28px 80px;
+        font-size: 14px;
+        line-height: 1.86;
+        font-weight: 500;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 968px;
+        font-size: 16px;
+        padding: 43px 109px;
+    }
+}
+
+.customer-reviews__name {
+    margin-bottom: 12px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 500;
+    }
+}
+
+.swiper-pagination {
+    position: static;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $background-color-secondary;
+}
