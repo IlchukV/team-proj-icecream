@@ -105,6 +105,13 @@
 
 
 .modal__label {
+    margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+    
+        &:nth-of-type(4n) {
+            margin-bottom: 20px;
+        }
 }
 
 .modal__label-title {
@@ -115,6 +122,7 @@
 
 .modal__input {
 }
+
 .modal__feedback {
 }
 .label__title {

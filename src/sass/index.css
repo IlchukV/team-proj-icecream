@@ -1103,4 +1103,13 @@ img {
     text-align: center;
     padding: 24px 60px 32px;
   }
+}
+
+.modal__label {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.modal__label:nth-of-type(4n) {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=index.css.map */
