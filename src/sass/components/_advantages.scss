@@ -1,12 +1,11 @@
 .advantages {
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0 178px;
     background-color: $mobile-button-color;
     position: relative;
 }
 
 .advantages__title {
-    // transform: translate(-999px, 0px)
     visibility: hidden;
     position: absolute;
 }
@@ -31,18 +30,16 @@
         &:not(:last-child) {
             padding-right: 80px;
         }
-
     }
 
     @include desktop {
         &:not(:last-child) {
             padding-right: 32px;
         }
-
     }
 }
 
-.advantages__svg {
+.advantages__thumb {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -50,11 +47,10 @@
     height: 50px;
     border-radius: 50%;
     background-color: $link-button-color;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 
     @include tablet {
         margin-bottom: 32px;
-
     }
 
     @include desktop {
@@ -69,6 +65,14 @@
     line-height: 1.22;
     letter-spacing: 0.04em;
     color: #FCFCFC;
+
+    @include tablet {
+        margin-bottom: 12px;
+    }
+
+    @include desktop {
+        margin-bottom: 12px;
+    }
 }
 
 .advantages__preTitle {
