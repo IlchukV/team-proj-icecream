@@ -3,6 +3,7 @@
     padding: 50px 0;
     background-color: $mobile-button-color;
 }
+
 .advantages__title {
     transform: translate(-999px, 0px)
 }
@@ -11,6 +12,7 @@
     @include tablet {
         display: flex;
         justify-content: center;
+
         &:not(:last-child) {
             margin-right: 60px;
         }
@@ -19,20 +21,24 @@
 
 .advantages__item {
     margin-bottom: 32px;
+
     @include tablet {
         margin-bottom: 0;
-    &:not(:last-child) {
-        padding-right: 80px;
-    }
+
+        &:not(:last-child) {
+            padding-right: 80px;
+        }
 
     }
+
     @include desktop {
-    &:not(:last-child) {
-        padding-right: 32px;
-    }
-    
+        &:not(:last-child) {
+            padding-right: 32px;
+        }
+
     }
 }
+
 .advantages__svg {
     display: inline-flex;
     justify-content: center;
@@ -42,14 +48,17 @@
     border-radius: 50%;
     background-color: $link-button-color;
     padding-bottom: 16px;
+
     @include tablet {
-    margin-bottom: 32px;
+        margin-bottom: 32px;
 
     }
+
     @include desktop {
         margin-bottom: 40px;
     }
 }
+
 .advantages__number {
     margin-bottom: 16px;
     font-weight: 700;
@@ -58,6 +67,7 @@
     letter-spacing: 0.04em;
     color: #FCFCFC;
 }
+
 .advantages__preTitle {
     display: inline-flex;
     font-weight: 700;
@@ -65,12 +75,14 @@
     line-height: 1.66;
     color: $text-title-color;
     width: 230px;
+
     @include tablet {
         width: 152px;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
     }
+
     @include desktop {
         width: 368px;
         font-weight: 400;
