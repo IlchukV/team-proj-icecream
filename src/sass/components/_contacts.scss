@@ -5,36 +5,39 @@
 
     @media screen and (min-width: $tablet) and (max-width:1199.95px) {
         padding-top: 80px;
+        position: absolute;
+        left: 0;
+        top: 1395px;
     }
 
     padding-top: 100px;
+    position: absolute;
+    left: 0;
+    top: 1420;
+
 
     &_company {
         visibility: hidden;
         position: absolute;
     }
 
-    &_list {
-        background-color: #84A178;
-    }
-
     &_list-item {
         @media screen and (max-width: 767.95px) {
             display: block;
             margin-bottom: 24px;
-            transform: translateY(-375px);
+            // transform: translateY(-375px);
         }
 
         @media screen and (min-width: $tablet) and (max-width:1199.95px) {
             gap: 16px;
             margin-bottom: 40px;
-            transform: translateY(-300px);
+            // transform: translateY(-300px);
         }
 
         display: flex;
         justify-content: center;
         gap: 32px;
-        transform: translateY(-120px);
+        // transform: translateY(-120px);
         margin-bottom: 60px;
         position: relative;
     }
@@ -259,16 +262,16 @@
     justify-content: center;
     align-items: center;
 
-    margin-top: -120px;
+    // margin-top: -120px;
 
     @media screen and (max-width: 767.95px) {
         flex-direction: column;
         text-align: center;
-        margin-top: -375px;
+        // margin-top: -375px;
     }
 
     @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-        margin-top: -300px;
+        // margin-top: -300px;
     }
 
     &_locations {
