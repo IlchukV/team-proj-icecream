@@ -136,7 +136,8 @@
         
     }
 
-.footer-contacts__tel {
+.footer-contacts__tel,
+.footer-contacts__tel-link {
     color: $text-title-color;
     font-weight: 700;
     font-size: 12px;
@@ -154,7 +155,13 @@
 
 .footer-contacts__tel-title {
     color: $text-main-color;
+    
 }
+
+// .footer-contacts__tel-link {
+//     color:#FCFCFC;
+    
+// }
 
 .footer-autors {
     position: relative;
@@ -203,3 +210,4 @@
         width: 400px;
     }
 }
+

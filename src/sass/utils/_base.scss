@@ -23,16 +23,6 @@ textarea {
     resize: none;
 }
 
-.container {
-font-weight: 400;
-    font-size: 30px;
-    line-height: 37px;
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 0 auto;
-}
-
 @mixin mobile {
     @media screen and (min-width: 480px) {
         @content;
@@ -60,6 +50,28 @@ font-weight: 400;
     }
 }
 
+
+.container {
+font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0 auto;
+    
+        @include tablet {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        
+        @include desktop {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    
+}
+
 h1,
 h2,
 h3,
@@ -84,5 +96,9 @@ img {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-decoration: none;
+}
+
+.link {
     text-decoration: none;
 }
