@@ -157,7 +157,7 @@
 
 
     &_icon-locations {
-        fill: #000000;
+        fill: currentColor;
     }
 }
 
@@ -166,12 +166,16 @@
 }
 
 .contacts-button_locations:focus {
-    background-color: #0A8817;
+    background-color: $hover-button-color;
     color: #FFFFFF;
+    outline: none;
+}
+
+.contacts-button_icon-locations:focus {
+    fill: #FFFFFF;
 }
 
 .button_locations {
-    padding: 12px 40px;
     margin-right: 16px;
 }
 
@@ -179,24 +183,24 @@
     width: 196px;
     height: 42px;
     cursor: pointer;
-    border: 0;
     border-radius: 10px;
-    background-color: $link-button-color;
+    border-color: $link-button-color;
+    background-color: $background-color-secondary;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
 
     &_icon-franchise {
-        fill: #000000;
+        fill: currentColor;
     }
 }
 
 .contacts-button_franchise:hover {
-    background-color: #0A8817;
+    border-color: $hover-button-color;
 }
 
 .contacts-button_franchise:focus {
-    background-color: #0A8817;
+    // background-color: #0A8817;
     color: #FFFFFF;
 }
