@@ -43,7 +43,7 @@
 
   height: 40px;
   width: 40px;
-  cursor: pointer;
+  // cursor: pointer;
   @include tablet {
     margin-right: 32px;
   }
@@ -110,7 +110,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 1.21;
-  cursor: pointer;
+  // cursor: pointer;
 
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
