@@ -749,4 +749,94 @@ img {
   transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: scroll;
   opacity: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.fanchise__modal {
+  position: absolute;
+  /* width: 280px; */
+  /* height: 674px; */
+  left: 0px;
+  top: 0px;
+  background: #FCFCFC;
+  border: 2px solid #F8D24E;
+  border-radius: 10px;
+  top: 50px;
+  left: 50%;
+  overflow: auto;
+  min-width: 100%;
+  max-height: 674px;
+  padding: 28px 30px;
+  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .fanchise__modal {
+  transform: translate(-50%, -50%) scaleX(1.5);
+}
+@media screen and (min-width: 1200px) {
+  .fanchise__modal {
+    min-width: 568px;
+    min-height: 668px;
+  }
+}
+
+.fanchise__close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCFCFC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FCFCFC;
+  /* border-radius: 50%; */
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 4.44px 4.48px;
+  background-color: transparent;
+  border: none;
+}
+.fanchise__close-btn:hover, .fanchise__close-btn:focus {
+  fill: #0A8817;
+}
+
+.fanchise__modal-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 28px;
+  color: #131313;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .fanchise__modal-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #131313;
+    margin-top: 32px;
+  }
+}
+
+.fanchise__modal-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  padding: 20px 30px 24px 28px;
+}
+@media screen and (min-width: 1200px) {
+  .fanchise__modal-text {
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    padding: 24px 60px 32px;
+  }
 }/*# sourceMappingURL=index.css.map */

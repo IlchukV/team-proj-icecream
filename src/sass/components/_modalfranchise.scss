@@ -4,29 +4,115 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     top: 0;
-    left:0;
+    left: 0;
     transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
      visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: scroll;
     opacity: 0;
 }
 
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .fanchise__modal {
+    position: absolute;
+    /* width: 280px; */
+    /* height: 674px; */
+    left: 0px;
+    top: 0px;
+    background: $text-title-color;
+    border: 2px solid $link-button-color;
+    border-radius: 10px;
+    top: 50px;
+    left: 50%;
+    overflow: auto;
+    min-width: 100%;
+    max-height: 674px;
+    padding: 28px 30px;
+    transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scaleX(1.5);
+    }
+
+    @include desktop {
+        min-width: 568px;
+        min-height: 668px;
+    }
 }
+
+
 .fanchise__close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $text-title-color;
+    border: 1px solid rgba(0,0,0,.1);
+    background: #FCFCFC;
+    /* border-radius: 50%; */
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 4.44px 4.48px;
+    background-color: transparent;
+    border: none;
+    &:hover,
+    &:focus {
+        fill: $hover-button-color;
+}
 }
 
-.fanchise__close-icon {
+.fanchise__modal-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: .03em;
+    text-align: center;
+    margin-top: 28px;
+    color: $text-main-color;
+    flex-wrap: wrap;
+
+    @include desktop{
+            font-weight: 400;
+            font-size: 20px;
+            line-height: calc(28/20);
+            // display: flex;
+            // align-items: center;
+            // text-align: center;
+            color: $text-main-color;
+            margin-top: 32px;
+    }
 }
 
-.fanchise__modal-form {
+.fanchise__modal-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    padding: 20px 30px 24px 28px;
+
+        @include desktop{
+            font-size: 16px;
+            align-items: center;
+            text-align: center;
+            padding: 24px 60px 32px;
+        }
 }
+
+
 .modal__label {
 }
+
 .modal__label-title {
 }
+
 .form__user {
 }
+
 .modal__input {
 }
 .modal__feedback {
