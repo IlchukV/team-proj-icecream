@@ -1,19 +1,22 @@
 .contacts {
     @media screen and (max-width: 767.95px) {
         padding-top: 40px;
+        // position: absolute;
+        // left: 0;
+        // top: 2770px;
     }
 
     @media screen and (min-width: $tablet) and (max-width:1199.95px) {
         padding-top: 80px;
-        position: absolute;
-        left: 0;
-        top: 1395px;
+        // position: absolute;
+        // left: 0;
+        // top: 1395px;
     }
 
-    padding-top: 100px;
+    // padding-top: 100px;
     position: absolute;
     left: 0;
-    top: 1420;
+    top: 1520px;
 
 
     &_company {
@@ -294,6 +297,7 @@
 
 .contacts-button_locations:hover {
     background-color: #0A8817;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-button_locations:focus {
@@ -333,6 +337,7 @@
 
 .contacts-button_franchise:hover {
     border-color: $hover-button-color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-button_franchise:focus {
