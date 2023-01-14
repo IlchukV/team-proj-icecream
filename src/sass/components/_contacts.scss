@@ -1,7 +1,4 @@
 .contacts {
-    padding-top: 100px;
-    position: relative;
-
     @media screen and (max-width: 767.95px) {
         padding-top: 40px;
     }
@@ -9,6 +6,8 @@
     @media screen and (min-width: $tablet) and (max-width:1199.95px) {
         padding-top: 80px;
     }
+
+    padding-top: 100px;
 
     &_company {
         visibility: hidden;
@@ -20,12 +19,6 @@
     }
 
     &_list-item {
-        display: flex;
-        justify-content: center;
-        gap: 32px;
-        transform: translateY(-120px);
-        margin-bottom: 60px;
-
         @media screen and (max-width: 767.95px) {
             display: block;
             margin-bottom: 24px;
@@ -37,17 +30,15 @@
             margin-bottom: 40px;
             transform: translateY(-300px);
         }
+
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        transform: translateY(-120px);
+        margin-bottom: 60px;
     }
 
     &_blocks-item {
-        width: 368px;
-        background-color: #FFFFFF;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 40px;
-
         @media screen and (max-width: 767.95px) {
             width: 280px;
             margin-left: auto;
@@ -67,11 +58,25 @@
             padding-left: 24px;
             padding-bottom: 40px;
         }
+
+        width: 368px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
     }
 
 
 
     &_item-type {
+        @media screen and (max-width: 767.95px) {
+            margin-bottom: 20px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,21 +97,9 @@
         &-food {
             width: 148px;
         }
-
-        @media screen and (max-width: 767.95px) {
-            margin-bottom: 20px;
-            font-size: 12px;
-            line-height: 1.2;
-        }
     }
 
     &_text {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.66;
-        color: $text-main-color;
-        margin-bottom: 8px;
-
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
         }
@@ -115,13 +108,15 @@
             font-size: 14px;
             margin-bottom: 12px;
         }
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.66;
+        color: $text-main-color;
+        margin-bottom: 8px;
     }
 
     &_address {
-        width: 288px;
-        padding-bottom: 32px;
-        border-bottom: 1px solid rgba(225, 225, 225, 1);
-
         @media screen and (max-width: 767.95px) {
             width: 195px;
             padding-bottom: 24px;
@@ -130,9 +125,21 @@
         @media screen and (min-width: $tablet) and (max-width:1199.95px) {
             width: 173px;
         }
+
+        width: 288px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid rgba(225, 225, 225, 1);
     }
 
     &_link {
+        @media screen and (max-width: 767.95px) {
+            font-size: 12px;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            font-size: 14px;
+        }
+
         font-weight: 500;
         font-size: 16px;
         line-height: 1.64;
@@ -144,38 +151,29 @@
         &:hover {
             text-decoration: underline;
         }
-
-        @media screen and (max-width: 767.95px) {
-            font-size: 12px;
-        }
-
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-            font-size: 14px;
-        }
     }
 }
 
 .work-schedule {
-    padding-top: 32px;
-
     @media screen and (max-width: 767.95px) {
         padding-top: 24px;
     }
+
+    padding-top: 32px;
 }
 
 .schedule {
     margin-bottom: 12px;
+    font-weight: 500;
+    color: $text-main-color;
 
     @media screen and (max-width: 1199.95px) {
         margin-bottom: 8px;
     }
 
     &_days {
-        font-weight: 500;
         font-size: 16px;
         line-height: 1.82;
-
-        color: $text-main-color;
 
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
@@ -187,7 +185,6 @@
     }
 
     &_time {
-        font-weight: 500;
         font-size: 16px;
         line-height: 1.86;
 
@@ -276,7 +273,6 @@
     &_locations {
         width: 196px;
         height: 42px;
-        cursor: pointer;
         border: 0;
         border-radius: 10px;
         background-color: $link-button-color;
@@ -318,7 +314,6 @@
 .contacts-button_franchise {
     width: 196px;
     height: 42px;
-    cursor: pointer;
     border-radius: 10px;
     border: 2px solid $link-button-color;
     background-color: $background-color-secondary;
