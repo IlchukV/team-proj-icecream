@@ -114,9 +114,6 @@
 }
 
 .footer-contacts__soc-links-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 34px;
     height: 34px;
     border-radius: 50%;
@@ -124,7 +121,13 @@
     }
 
     .footer-contacts__soc-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         fill: $background-color-secondary;
+        transition: fill 250ms linear;
 
         &:hover,
         &:focus {
@@ -133,7 +136,8 @@
         
     }
 
-.footer-contacts__tel {
+.footer-contacts__tel,
+.footer-contacts__tel-link {
     color: $text-title-color;
     font-weight: 700;
     font-size: 12px;
@@ -151,7 +155,13 @@
 
 .footer-contacts__tel-title {
     color: $text-main-color;
+    
 }
+
+// .footer-contacts__tel-link {
+//     color:#FCFCFC;
+    
+// }
 
 .footer-autors {
     position: relative;
@@ -200,3 +210,4 @@
         width: 400px;
     }
 }
+
