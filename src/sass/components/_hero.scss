@@ -1,0 +1,208 @@
+.hero-page {
+  background-color: $background-color-secondary;
+  position: relative;
+  width: 320px;
+  height: 453px;
+  padding-top: 50px;
+  @include mobile {
+    padding-top: 40px;
+    width: 480px;
+    height: 357px;
+  }
+
+  @include tablet {
+    padding-top: 14px;
+    width: 768px;
+    height: 349px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include desktop {
+    padding-top: 45px;
+    width: 1200px;
+    height: 591px;
+  }
+}
+.depiction__background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.depiction-right {
+  position: absolute;
+  bottom: 0;
+  right: 60px;
+
+  @include mobile {
+    position: absolute;
+    right: 20px;
+  }
+  @include tablet {
+    right: 92px;
+  }
+}
+.combination {
+  display: flex;
+  justify-content: space-between;
+}
+.caption__title {
+  max-width: 247px;
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-size: 26px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  color: $text-title-color;
+
+  & span {
+    font-size: 34px;
+  }
+  @include tablet {
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    font-size: 38px;
+    max-width: 367px;
+    margin-bottom: 28px;
+    & span {
+      font-size: 38px;
+    }
+  }
+}
+.button-products {
+  padding: 11px 26px;
+  margin-right: 12px;
+  border-radius: 10px;
+  border: 2px solid $link-button-color;
+  background-color: transparent;
+  color: $text-main-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 2px solid $hover-button-color;
+  }
+  &:focus {
+    color: $text-title-color;
+  }
+
+  @include desktop {
+    padding: 12px 34px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.button-about {
+  font-size: 12px;
+  line-height: 1.25;
+  text-decoration-line: underline;
+  color: $link-button-color;
+  background-color: transparent;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $hover-button-color;
+  }
+  &:focus {
+    color: $text-title-color;
+  }
+  @include desktop {
+    padding: 12px 22px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.quantity {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+.quantity__item:first-child {
+  margin-bottom: 20px;
+}
+.quantity__number {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+  @include desktop {
+    font-size: 46px;
+  }
+}
+.quantity__text {
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: $text-title-color;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.depiction-left {
+  display: none;
+
+  @include tablet {
+    position: absolute;
+    left: 32px;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+  }
+  @include desktop {
+    left: 16px;
+    bottom: 64px;
+  }
+}
+.depiction-left__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 32px;
+  @include desktop {
+    margin-left: 16px;
+    margin-top: 67px;
+  }
+}
+.depiction-left__text {
+  max-width: 139px;
+  margin-bottom: 3px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.5;
+  color: $text-title-color;
+  @include desktop {
+    margin-bottom: 15px;
+    max-width: 200px;
+    font-size: 13px;
+  }
+}
+.depiction-left__btn {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  padding: 0;
+
+  &:hover .depiction-left__icon,
+  &:focus .depiction-left__icon {
+    scale: 1.5;
+  }
+}
+
+.depiction-left__icon {
+  fill: $text-title-color;
+  scale: 1;
+  transition: scale 250ms linear;
+}
