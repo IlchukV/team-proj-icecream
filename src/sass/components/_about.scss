@@ -6,7 +6,10 @@
   align-items: center;
   margin: 0 auto;
 
-
+  @include mobile {
+      width: 480px;
+    }
+    
   @include tablet {
     width: 768px;
   }
