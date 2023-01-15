@@ -213,6 +213,12 @@ padding-top: 22px;
   }
 }
 
+.about__svg:hover,
+.about__svg:focus{
+  fill: #FCFCFC;
+  outline: none;
+}
+
 .about__button {
   width: 164px;
   height: 42px;
@@ -230,15 +236,18 @@ padding-top: 22px;
   color: $modal-button-color;
   cursor: url('/src/images/cursor.png'), pointer;
 
-
-  @media screen and (min-width:$desktop) {
+  @media screen and (min-width:768px) {
+    margin-left: 0;
+  }
+    @include desktop {
     &:hover {
       background-color: $hover-button-color;
       color: $modal-button-color;
+      outline: none;
     }
-
     &:focus {
       color: $text-title-color;
+      outline: none;
     }
   }
 }
@@ -254,6 +263,6 @@ padding-top: 22px;
     &:focus {
       color: $text-title-color;
     }
+  }
 }
-  
-}
+
