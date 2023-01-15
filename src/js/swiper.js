@@ -5,11 +5,11 @@
     clickable: true
     },
 
-    // autoplay: {
-    //     delay: 5000,
-    //     stopOnLastSlide: false,
-    //     disableOnInteraction: false
-    // },
+    autoplay: {
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false
+    },
 
     speed: 500,
 
