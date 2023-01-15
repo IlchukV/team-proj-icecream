@@ -1,25 +1,20 @@
 .hero-page {
   background-color: $background-color-secondary;
   position: relative;
-  width: 320px;
   height: 453px;
   padding-top: 50px;
   @include mobile {
     padding-top: 40px;
-    width: 480px;
-    height: 357px;
+    height: 360px;
   }
 
   @include tablet {
-    padding-top: 14px;
     width: 768px;
-    height: 349px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-top: 14px;
   }
   @include desktop {
-    padding-top: 45px;
     width: 1200px;
+    padding-top: 45px;
     height: 591px;
   }
 }
@@ -41,9 +36,9 @@
     right: 92px;
   }
 }
-.combination {
-  display: flex;
-  justify-content: space-between;
+.caption {
+  position: absolute;
+  z-index: 1;
 }
 .caption__title {
   max-width: 247px;
