@@ -11,7 +11,7 @@
 
     @media screen and (max-width: 767px) {
         max-width: 480px;
-        
+
         @include retina {
             & {
                 background-image: url(../images/Backgroud_mobile@2x.jpg);
@@ -131,6 +131,10 @@
     position: static;
     margin-bottom: 40px;
 
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+    }
+    
     @media screen and (min-width: 768px) {
         margin-bottom: 80px;
     }
