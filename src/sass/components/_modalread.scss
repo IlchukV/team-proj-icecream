@@ -17,8 +17,8 @@
   border: 2px solid #F8D24E;
   border-radius: 10px;
   align-items: center;
-  position: absolute;
   justify-content: center;
+  opacity: 1;
 
   @media screen and (min-width:768px) {
     width: 568px;
@@ -27,11 +27,11 @@
   }
 }
 
-.is-hidden {
-  opacity: 1;
-  visibility: hidden;
-  pointer-events: none;
-}
+// .is-hidden {
+//   opacity: 1;
+//   visibility: hidden;
+//   pointer-events: none;
+// }
 
 
 .modal-read__close {
