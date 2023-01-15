@@ -1,3 +1,11 @@
+
+import './js/swiper';
+
+
+
+
+
+
 // mobile-menu
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
