@@ -1,7 +1,7 @@
 
 .customer-reviews {
 
-    padding: 580px 0;
+    padding: 180px 0 450px 0;
     margin: 0 auto;
     text-align: center;
     background-color: $background-color-secondary;
@@ -9,9 +9,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media screen and (min-width: 480px) {
+        padding-top: 260px;
+    }
+
     @media screen and (max-width: 767px) {
         max-width: 480px;
-
         @include retina {
             & {
                 background-image: url(../images/Backgroud_mobile@2x.jpg);
@@ -19,7 +22,7 @@
         }
     }
     @media screen and (min-width: 768px) {
-        padding: 400px 0 350px;
+        padding: 300px 0 350px;
         width: 768px;
         background-image: url(../images/Background_tablet.jpg);
 
@@ -30,7 +33,7 @@
         }
     }
     @media screen and (min-width: 1200px) {
-        padding: 400px 0 150px;
+        padding: 450px 0 180px;
         width: 1200px;
         background-image: url(../images/Backgroud_desktop.jpg);
 
@@ -49,11 +52,6 @@
     border-radius: 50%;
     background-color: $background-color-secondary;
     background-size: contain;
-
-
-    // @media screen and (min-width: 1200px) {
-    //     margin-top: 140px;
-    // }
 }
 
 // .customer-reviews__photo--emily {
@@ -113,41 +111,52 @@
 }
 
 .customer-reviews__name {
-    margin-bottom: 0;
 
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 0;
+        margin-bottom: 15px;
         font-size: 16px;
         font-weight: 400;
     }
 
     @media screen and (min-width: 1200px) {
-        margin-bottom: 0;
         font-weight: 500;
     }
 }
 
 .swiper-pagination {
     position: static;
-    // margin-bottom: 40px;
+    margin-bottom: 25px;
 
-    // @media screen and (min-width: 480px) {
-    //     margin-bottom: 60px;
-    // }
+    @media screen and (min-width: 480px) {
+        margin-bottom: 35px;
+    }
 
-    // @media screen and (min-width: 768px) {
-    //     margin-bottom: 80px;
-    // }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
 
-    // @media screen and (min-width: 1200px) {
-    //     margin-bottom: 100px;
-    // }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
 } 
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
 
 .swiper-pagination-bullet-active {
     background-color: $background-color-secondary;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+    
+    &:not(:last-child) {
+        margin-right: 12px;
+    }
 }

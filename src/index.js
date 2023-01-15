@@ -41,22 +41,6 @@ import './js/swiper';
   });
 })();
 
-// Modal
-(() => {
-    const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
-        closeModalBtn: document.querySelector("[data-modal-close]"),
-        modal: document.querySelector("[data-modal]"),
-    };
-
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-
-    function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
-    }
-})();
-
 // Modal +
 
 !function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
@@ -90,8 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
          /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
-         modalElem.classList.add('active');
-         overlay.classList.add('active');
+         modalElem.classList.remove('is-hidden');
+         overlay.classList.remove('is-hidden');
+         document.body.classList.add('is-not-overflow');
       }); // end click
 
    }); // end foreach
@@ -102,30 +87,12 @@ document.addEventListener('DOMContentLoaded', function() {
       item.addEventListener('click', function(e) {
          var parentModal = this.closest('.modal');
 
-         parentModal.classList.remove('active');
-         overlay.classList.remove('active');
+         parentModal.classList.add('is-hidden');
+         overlay.classList.add('is-hidden');
+         document.body.classList.remove('is-not-overflow');
       });
 
    }); // end foreach
-
-
-    document.body.addEventListener('keyup', function (e) {
-        var key = e.keyCode;
-
-        if (key == 27) {
-
-            document.querySelector('.modal.active').classList.remove('active');
-            document.querySelector('.overlay').classList.remove('active');
-        };
-    }, false);
-
-
-    overlay.addEventListener('click', function() {
-        document.querySelector('.modal.active').classList.remove('active');
-        this.classList.remove('active');
-    });
-
-
 
 
 }); // end ready

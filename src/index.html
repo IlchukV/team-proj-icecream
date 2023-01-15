@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
 
@@ -34,15 +32,19 @@
       <include src="./partials/contacts.html"></include>
       
       <!-- Modal -->
+      <div class="backdrop js-overlay-modal is-hidden">
+      <include src="./partials/modalbuy.html"></include>
       <include src="./partials/modalfranchise.html"></include>
       <include src="./partials/modalingredients.html"></include>
       <include src="./partials/modallocation.html"></include>
-      <include src="./partials/modalread.html"></include>  
-
+      <include src="./partials/modalread.html"></include>
+      </div>
+     
     </main>
 
     <!-- Footer -->
     <include src="./partials/footer.html"></include>
-
-     </body>
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
 </html>
