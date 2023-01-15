@@ -96,10 +96,7 @@
 .button-about {
   font-size: 12px;
   line-height: 1.25;
-  text-decoration-line: underline;
   color: $link-button-color;
-  background-color: transparent;
-  border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
