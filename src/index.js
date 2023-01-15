@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
          parentModal.classList.add('is-hidden');
          overlay.classList.add('is-hidden');
-         documentbody.classList.remove('is-not-overflow');
+         document.body.classList.remove('is-not-overflow');
       });
 
    }); // end foreach
