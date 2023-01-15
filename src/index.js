@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
    var modalButtons = document.querySelectorAll('.js-open-modal'),
        overlay      = document.querySelector('.js-overlay-modal'),
        closeButtons = document.querySelectorAll('.js-modal-close');
-       body         = document.querySelector('body');
 
 
    /* Перебираем массив кнопок */
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
             подложке и окну чтобы показать их. */
          modalElem.classList.remove('is-hidden');
          overlay.classList.remove('is-hidden');
-         body.classList.add('is-not-overflow');
+         document.body.classList.add('is-not-overflow');
       }); // end click
 
    }); // end foreach
@@ -90,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
          parentModal.classList.add('is-hidden');
          overlay.classList.add('is-hidden');
-         body.classList.remove('is-not-overflow');
+         document.body.classList.remove('is-not-overflow');
       });
 
    }); // end foreach
