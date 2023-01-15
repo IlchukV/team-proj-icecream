@@ -1,7 +1,7 @@
 
 .customer-reviews {
 
-    padding: 400px 0;
+    padding: 570px 0;
     margin: 0 auto;
     text-align: center;
     background-color: $background-color-secondary;
@@ -19,6 +19,7 @@
         }
     }
     @media screen and (min-width: 768px) {
+        padding: 400px 0 330px;
         width: 768px;
         background-image: url(../images/Background_tablet.jpg);
 
@@ -29,6 +30,7 @@
         }
     }
     @media screen and (min-width: 1200px) {
+        padding: 400px 0 150px;
         width: 1200px;
         background-image: url(../images/Backgroud_desktop.jpg);
 
