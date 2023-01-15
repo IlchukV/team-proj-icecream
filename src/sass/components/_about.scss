@@ -7,9 +7,9 @@
   margin: 0 auto;
 
 
-  @include mobile {
-    width: 360px;
-  }
+  // @include mobile {
+  //   width: 360px;
+  // }
 
   @include tablet {
     width: 768px;
