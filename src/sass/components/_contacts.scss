@@ -60,7 +60,7 @@
         }
 
         width: 368px;
-        background-color: #FFFFFF;
+        background-color: $background-color-contacts;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding-top: 40px;
@@ -187,7 +187,7 @@
         font-size: 16px;
         line-height: 1.86;
 
-        color: #ABABAB;
+        color: $color-time-contacts;
 
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
@@ -200,7 +200,7 @@
 }
 
 .company_contacts {
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid $border-company-contacts;
     width: 288px;
 
     padding-top: 32px;
@@ -282,18 +282,18 @@
 }
 
 .contacts-button_locations:hover {
-    background-color: #0A8817;
+    background-color: $hover-button-color;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-button_locations:focus {
     background-color: $hover-button-color;
-    color: #FFFFFF;
+    color: $background-color-contacts;
     outline: none;
 }
 
 .contacts-button_icon-locations:focus {
-    fill: #FFFFFF;
+    fill: $background-color-contacts;
 }
 
 .button_locations {
@@ -327,11 +327,11 @@
 }
 
 .contacts-button_franchise:focus {
-    border: 2px solid #0A8817;
+    border: 2px solid $hover-button-color;
     outline: none;
-    color: #FFFFFF;
+    color: $background-color-contacts;
 }
 
 .contacts-button_icon-franchise:focus {
-    fill: #FFFFFF;
+    fill: $background-color-contacts
 }
