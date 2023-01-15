@@ -43,15 +43,15 @@
 .customer-reviews__photo {
     width: 85px;
     height: 85px;
-    margin: 80px auto 32px auto;
+    margin: 0 auto 32px auto;
     border-radius: 50%;
     background-color: $background-color-secondary;
     background-size: contain;
 
 
-    @media screen and (min-width: 1200px) {
-        margin-top: 140px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     margin-top: 140px;
+    // }
 }
 
 // .customer-reviews__photo--emily {
@@ -129,19 +129,19 @@
 
 .swiper-pagination {
     position: static;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 60px;
-    }
-    
-    @media screen and (min-width: 768px) {
-        margin-bottom: 80px;
-    }
+    // @media screen and (min-width: 480px) {
+    //     margin-bottom: 60px;
+    // }
 
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 100px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     margin-bottom: 80px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     margin-bottom: 100px;
+    // }
 } 
 
 .swiper-pagination-bullet-active {
