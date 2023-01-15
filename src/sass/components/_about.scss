@@ -79,13 +79,32 @@
     padding-bottom: 82px;
   }
 }
-
+.about__block {
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
+}
 .about__korovka {
   margin-top: 22px;
   justify-content: center;
   margin-bottom: 40px;
+width: 278px;
+height: 279px;
+margin-left: auto ;
+margin-right: auto;
 
+@media screen and (min-width:768px) {
+  justify-content: left;
+  margin-left: 32px;
+  margin-top: 0px;
+  margin-right: 0;
 }
+@media screen and (min-width:1200px) {
+  width: 490px;
+  height: 490px;
+    margin-bottom: 0;
+}
+ }
 
 
 .about__list {
@@ -108,17 +127,19 @@
 
   @media screen and (min-width:480px) {
     padding-bottom: 24px;
-    width: 334px;
+    
   }
 
   @media screen and (min-width:768px) {
     padding-bottom: 32px;
     margin-left: 0;
-    width: 463px;
+    width: 334px;
   }
 
   @media screen and (min-width:1200px) {
     padding-bottom: 54px;
+    width: 463px;
+    align-items: center;
   }
 }
 
@@ -135,7 +156,8 @@
 
   @media screen and (min-width:1200px) {
     font-size: 16px;
-
+    margin-top: 51px;
+  
   }
 }
 
