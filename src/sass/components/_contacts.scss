@@ -304,7 +304,6 @@
 
 .button_locations {
     margin-right: 16px;
-    cursor: url(/src/images/cursor.png), pointer;
 
     @media screen and (max-width: 767.95px) {
         margin-right: 0;
@@ -322,7 +321,6 @@
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
-    cursor: url(/src/images/cursor.png), pointer;
 
     .contacts-button_icon-franchise {
         fill: currentColor;
