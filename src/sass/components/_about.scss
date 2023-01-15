@@ -215,6 +215,12 @@ padding-top: 22px;
   }
 }
 
+.about__svg:hover,
+.about__svg:focus{
+  fill: #FCFCFC;
+  outline: none;
+}
+
 .about__button {
   width: 164px;
   height: 42px;
@@ -234,29 +240,20 @@ padding-top: 22px;
   @media screen and (min-width:768px) {
     margin-left: 0;
   }
-
-  @media screen and (min-width:1200px) {
+    @include desktop {
     &:hover {
       background-color: $hover-button-color;
       color: $modal-button-color;
+      outline: none;
     }
-
     &:focus {
       color: $text-title-color;
+      outline: none;
     }
   }
 }
 
 .about__svg {
   margin-left: 8px;
-@media screen and (min-width:1200px) {
-  &:hover {
-      color: $modal-button-color;
-    }
-  
-    &:focus {
-      color: $text-title-color;
-    }
 }
-  
-}
+
