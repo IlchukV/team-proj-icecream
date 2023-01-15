@@ -1,10 +1,6 @@
 .about {
   padding-top: 60px;
-<<<<<<< Updated upstream
-  padding-bottom: 60px;
-=======
   padding-bottom: 0;
->>>>>>> Stashed changes
   color: $text-title-color;
   background-color: $background-color-secondary;
   align-items: center;
@@ -12,18 +8,6 @@
 
 
   @include mobile {
-<<<<<<< Updated upstream
-      width: 360px;
-    }
-  
-    @include tablet {
-      width: 768px;
-    }
-  
-    @include desktop {
-      width: 1200px;
-    }
-=======
     width: 360px;
   }
 
@@ -34,7 +18,6 @@
   @include desktop {
     width: 1200px;
   }
->>>>>>> Stashed changes
 }
 
 .about__label {
@@ -96,42 +79,17 @@
     padding-bottom: 82px;
   }
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 .about__block {
   @media screen and (min-width:768px) {
     display: flex;
   }
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 .about__korovka {
   margin-top: 22px;
   justify-content: center;
   margin-bottom: 40px;
-<<<<<<< Updated upstream
-width: 278px;
-height: 279px;
-margin-left: auto ;
-margin-right: auto;
-
-@media screen and (min-width:768px) {
-  justify-content: left;
-  margin-left: 32px;
-  margin-top: 0px;
-  margin-right: 0;
-}
-@media screen and (min-width:1200px) {
-  width: 490px;
-  height: 490px;
-    margin-bottom: 0;
-}
- }
-=======
   width: 278px;
   height: 279px;
   margin-left: auto;
@@ -150,17 +108,12 @@ margin-right: auto;
     margin-bottom: 0;
   }
 }
->>>>>>> Stashed changes
 
 
 .about__list {
   @media screen and (min-width:768px) {
     margin-left: 38px;
-<<<<<<< Updated upstream
-  
-=======
 
->>>>>>> Stashed changes
   }
 
   @media screen and (min-width:1200px) {
@@ -177,11 +130,7 @@ margin-right: auto;
 
   @media screen and (min-width:480px) {
     padding-bottom: 24px;
-<<<<<<< Updated upstream
-    
-=======
 
->>>>>>> Stashed changes
   }
 
   @media screen and (min-width:768px) {
@@ -211,11 +160,7 @@ margin-right: auto;
   @media screen and (min-width:1200px) {
     font-size: 16px;
     margin-top: 51px;
-<<<<<<< Updated upstream
-  
-=======
 
->>>>>>> Stashed changes
   }
 }
 
@@ -277,18 +222,6 @@ margin-right: auto;
   @media screen and (min-width:768px) {
     margin-left: 0;
   }
-<<<<<<< Updated upstream
- @media screen and (min-width:1200px) {
-  &:hover {
-    background-color: $hover-button-color;
-    color: #000000;
-  }
-
-  &:focus {
-    color: $text-title-color;
-  }
-}
-=======
 
   @media screen and (min-width:1200px) {
     &:hover {
@@ -300,7 +233,6 @@ margin-right: auto;
       color: $text-title-color;
     }
   }
->>>>>>> Stashed changes
 
   // &:disabled {
   //   background-color: #ABABAB;
