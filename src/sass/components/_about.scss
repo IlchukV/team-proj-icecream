@@ -7,10 +7,6 @@
   margin: 0 auto;
 
 
-  // @include mobile {
-  //   width: 360px;
-  // }
-
   @include tablet {
     width: 768px;
   }
@@ -96,8 +92,7 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $link-button-color;
-  // linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-  //   #D9D9D9;
+  
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
 border-radius: 50%;
 padding-top: 22px;
@@ -230,6 +225,7 @@ padding-top: 22px;
   margin-right: auto;
   background-color: $link-button-color;
   color: $modal-button-color;
+  cursor: url('/src/images/cursor.png'), pointer;
 
   @media screen and (min-width:768px) {
     margin-left: 0;
