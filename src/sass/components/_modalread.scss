@@ -40,7 +40,7 @@
   top: 11px;
   right: 11px;
   border-radius: none;
-  cursor: pointer;
+  // cursor: pointer;
   background-color: transparent;
   border: none;
 }
@@ -73,7 +73,7 @@
 
 .modal-read__video {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   height: 199px;
 
   @media screen and (min-width:768px) {
