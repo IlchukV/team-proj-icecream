@@ -229,7 +229,7 @@ padding-top: 22px;
   margin-left: auto;
   margin-right: auto;
   background-color: $link-button-color;
-  color: #000000;
+  color: $modal-button-color;
 
   @media screen and (min-width:768px) {
     margin-left: 0;
@@ -238,7 +238,7 @@ padding-top: 22px;
   @media screen and (min-width:1200px) {
     &:hover {
       background-color: $hover-button-color;
-      color: #000000;
+      color: $modal-button-color;
     }
 
     &:focus {
@@ -251,7 +251,7 @@ padding-top: 22px;
   margin-left: 8px;
 @media screen and (min-width:1200px) {
   &:hover {
-      color: #000000;
+      color: $modal-button-color;
     }
   
     &:focus {
