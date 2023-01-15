@@ -1,48 +1,49 @@
 .contacts {
-    @media screen and (max-width: 767.95px) {
-        padding-top: 40px;
-        // position: absolute;
-        // left: 0;
-        // top: 2770px;
-    }
+    position: relative;
 
-    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-        padding-top: 80px;
-        // position: absolute;
-        // left: 0;
-        // top: 1395px;
-    }
+    // @media screen and (max-width: 767.95px) {
+    //     padding-top: 40px;
+    // }
 
-    // padding-top: 100px;
-    // position: absolute;
-    // left: 0;
-    // top: 1520px;
-
+    // @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+    //     padding-top: 80px;
+    // }
 
     &_company {
         visibility: hidden;
         position: absolute;
     }
 
+    &_list {
+        position: absolute;
+        top: -125px;
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            position: absolute;
+            top: -340px;
+        }
+
+        @media screen and (max-width: 767.95px) {
+            position: absolute;
+            top: -412px;
+        }
+    }
+
     &_list-item {
         @media screen and (max-width: 767.95px) {
             display: block;
             margin-bottom: 24px;
-            // transform: translateY(-375px);
         }
 
         @media screen and (min-width: $tablet) and (max-width:1199.95px) {
             gap: 16px;
             margin-bottom: 40px;
-            // transform: translateY(-300px);
         }
 
         display: flex;
         justify-content: center;
         gap: 32px;
-        // transform: translateY(-120px);
         margin-bottom: 60px;
-        // position: relative;
     }
 
     &_blocks-item {
@@ -74,7 +75,6 @@
         padding-bottom: 40px;
         padding-left: 40px;
     }
-
 
 
     &_item-type {
@@ -265,17 +265,11 @@
     justify-content: center;
     align-items: center;
 
-    // margin-top: -120px;
-
     @media screen and (max-width: 767.95px) {
         flex-direction: column;
         text-align: center;
-        // margin-top: -375px;
     }
 
-    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-        // margin-top: -300px;
-    }
 
     &_locations {
         width: 196px;
