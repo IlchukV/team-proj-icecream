@@ -1,5 +1,7 @@
+
 .customer-reviews {
-    position: relative;
+
+    padding: 400px 0;
     margin: 0 auto;
     text-align: center;
     background-color: $background-color-secondary;
@@ -10,6 +12,7 @@
     @media screen and (max-width: 767px) {
         @include retina {
             & {
+                max-width: 480px;
                 background-image: url(../images/Backgroud_mobile@2x.jpg);
             }
         }
@@ -19,6 +22,7 @@
 
         @include retina {
             & {
+                width: 768px;
                 background-image: url(../images/Background_tablet@2x.jpg);
             }
         }
@@ -28,28 +32,25 @@
 
         @include retina {
             & {
+                width: 1200px;
                 background-image: url(../images/Backgroud_desktop@2x.jpg);
             }
         }
     }
 }
 
-// .customer-reviews-bg{
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 32px;
-//     background-color: $background-color-secondary;   
-// }
-
 .customer-reviews__photo {
     width: 85px;
     height: 85px;
-    margin: 0 auto 32px auto;
+    margin: 80px auto 32px auto;
     border-radius: 50%;
     background-color: $background-color-secondary;
     background-size: contain;
+
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 140px;
+    }
 }
 
 // .customer-reviews__photo--emily {
@@ -127,7 +128,16 @@
 
 .swiper-pagination {
     position: static;
-}
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 100px;
+    }
+} 
 
 .swiper-pagination-bullet-active {
     background-color: $background-color-secondary;
