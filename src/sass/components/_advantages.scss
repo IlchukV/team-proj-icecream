@@ -1,4 +1,12 @@
-.advantages {
+.advantages_container {
+    @include tablet {
+        width: 768px;
+    }
+
+    @include desktop {
+        width: 1200px;
+    }
+
     text-align: center;
     padding: 60px 0 178px;
     background-color: $mobile-button-color;
