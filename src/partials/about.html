@@ -2,9 +2,28 @@
   <div class="container">
   <p class="about__label">tradition and love</p>
   <h2 class="about__title">how it’s made?</h2>
-  <div>
+  <div class="about__block">
   <div class="about__korovka">
-
+  <picture>
+      <source
+        srcset="./images/korovka_desctop.png, ./images/korovka_desctop@2x.png"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/korovka_tablet.png, ./images/korovka_tablet.png"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./images/korovka_mobile.png, ./images/korovka_mobile@2x.png"
+        media="(min-width:480px)"
+      />
+      <img
+        srcset="./images/korovka_mobile.png, ./images/korovka_mobile@2x.png"
+        src="./images/korovka_mobile.png"
+        alt=""
+        class="about__img"
+      />
+    </picture>
   </div>
   <div class="about__list">
   <div class="about__text">
@@ -25,9 +44,11 @@
   
 </div>
 <button data-modal-open type="button" class="about__button" disabled>
-    Read more
+    Read more <svg  width="6" height="10">
+                  <use href="../images/symbol-defs.svg#icon-vector"></use>
+                </svg>
   </button>
   </div>
   </div>
-  </div>
+</div>
 </section>

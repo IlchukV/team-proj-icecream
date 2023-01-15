@@ -6,6 +6,7 @@
   align-items: center;
   margin: 0 auto;
 
+
   @include mobile {
       width: 360px;
     }
@@ -28,7 +29,6 @@
   padding-bottom: 12px;
   margin-right: auto;
   margin-left: auto;
-
 
 
   @media screen and (min-width:768px) {
@@ -59,6 +59,7 @@
   text-transform: uppercase;
   padding-bottom: 32px;
 
+
   @media screen and (max-width: 480px) {
     width: 200px;
     margin-right: auto;
@@ -80,17 +81,17 @@
 }
 
 .about__korovka {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  margin-top: 22px;
+  justify-content: center;
+  margin-bottom: 40px;
 
-  background-image: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-    url(../images/korovka_mobile.png);
 }
+
 
 .about__list {
   @media screen and (min-width:768px) {
     margin-left: 38px;
+  
   }
 
   @media screen and (min-width:1200px) {
@@ -196,7 +197,7 @@
   @media screen and (min-width:768px) {
     margin-left: 0;
   }
-
+ @media screen and (min-width:1200px) {
   &:hover {
     background-color: $hover-button-color;
     color: #000000;
@@ -205,6 +206,7 @@
   &:focus {
     color: $text-title-color;
   }
+}
 
   // &:disabled {
   //   background-color: #ABABAB;
