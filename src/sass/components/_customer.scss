@@ -10,29 +10,29 @@
     background-size: cover;
 
     @media screen and (max-width: 767px) {
+        max-width: 480px;
         @include retina {
             & {
-                max-width: 480px;
                 background-image: url(../images/Backgroud_mobile@2x.jpg);
             }
         }
     }
     @media screen and (min-width: 768px) {
+        width: 768px;
         background-image: url(../images/Background_tablet.jpg);
 
         @include retina {
             & {
-                width: 768px;
                 background-image: url(../images/Background_tablet@2x.jpg);
             }
         }
     }
     @media screen and (min-width: 1200px) {
+        width: 1200px;
         background-image: url(../images/Backgroud_desktop.jpg);
 
         @include retina {
             & {
-                width: 1200px;
                 background-image: url(../images/Backgroud_desktop@2x.jpg);
             }
         }
