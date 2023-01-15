@@ -1,7 +1,7 @@
 
 .customer-reviews {
 
-    padding: 570px 0;
+    padding: 580px 0;
     margin: 0 auto;
     text-align: center;
     background-color: $background-color-secondary;
@@ -19,7 +19,7 @@
         }
     }
     @media screen and (min-width: 768px) {
-        padding: 400px 0 330px;
+        padding: 400px 0 350px;
         width: 768px;
         background-image: url(../images/Background_tablet.jpg);
 
@@ -113,19 +113,20 @@
 }
 
 .customer-reviews__name {
-    margin-bottom: 12px;
+    margin-bottom: 0;
 
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
+        margin-bottom: 0;
         font-size: 16px;
         font-weight: 400;
     }
 
     @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
         font-weight: 500;
     }
 }
