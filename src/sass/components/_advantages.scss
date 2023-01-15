@@ -1,156 +1,166 @@
 .advantages {
-    text-align: center;
-    padding: 60px 0 178px;
-    background-color: $mobile-button-color;
-    position: relative;
-}
+    &_container {
+        @include tablet {
+            width: 768px;
+        }
 
-.advantages__title {
-    visibility: hidden;
-    position: absolute;
-}
+        @include desktop {
+            width: 1200px;
+        }
 
-.advantages__list {
-    @include tablet {
-        display: flex;
-        justify-content: center;
+        text-align: center;
+        padding: 60px 0 178px;
+        background-color: $mobile-button-color;
+        position: relative;
+    }
 
-        &:not(:last-child) {
-            margin-right: 60px;
+    &__title {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    &__list {
+        @include tablet {
+            display: flex;
+            justify-content: center;
+
+            &:not(:last-child) {
+                margin-right: 60px;
+            }
         }
     }
-}
 
-.advantages__item {
-    margin-bottom: 32px;
+    &__item {
+        margin-bottom: 32px;
 
-    @include tablet {
-        margin-bottom: 0;
+        @include tablet {
+            margin-bottom: 0;
 
-        &:not(:last-child) {
-            padding-right: 80px;
+            &:not(:last-child) {
+                padding-right: 80px;
+            }
+        }
+
+        @include desktop {
+            &:not(:last-child) {
+                padding-right: 32px;
+            }
         }
     }
 
-    @include desktop {
-        &:not(:last-child) {
-            padding-right: 32px;
+    &__thumb-cow-icon::before {
+        content: " ";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url(/src/images/cow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 16px;
+
+        @include tablet {
+            margin-bottom: 32px;
+        }
+
+        @include desktop {
+            margin-bottom: 40px;
         }
     }
-}
 
-.advantages__thumb-cow-icon::before {
-    content: " ";
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url(/src/images/cow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 16px;
+    &__thumb-weight-icon::before {
+        content: " ";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url(/src/images/weight.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 16px;
 
-    @include tablet {
-        margin-bottom: 32px;
+        @include tablet {
+            margin-bottom: 32px;
+        }
+
+        @include desktop {
+            margin-bottom: 40px;
+        }
     }
 
-    @include desktop {
-        margin-bottom: 40px;
-    }
-}
+    &__thumb-weight-icon::before {
+        content: " ";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url(/src/images/weight.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 16px;
 
-.advantages__thumb-weight-icon::before {
-    content: " ";
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url(/src/images/weight.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 16px;
+        @include tablet {
+            margin-bottom: 32px;
+        }
 
-    @include tablet {
-        margin-bottom: 32px;
-    }
-
-    @include desktop {
-        margin-bottom: 40px;
-    }
-}
-
-.advantages__thumb-weight-icon::before {
-    content: " ";
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url(/src/images/weight.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 16px;
-
-    @include tablet {
-        margin-bottom: 32px;
+        @include desktop {
+            margin-bottom: 40px;
+        }
     }
 
-    @include desktop {
-        margin-bottom: 40px;
-    }
-}
+    &__thumb-ice-icon::before {
+        content: " ";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-image: url(/src/images/ice.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 16px;
 
-.advantages__thumb-ice-icon::before {
-    content: " ";
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-image: url(/src/images/ice.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 16px;
+        @include tablet {
+            margin-bottom: 32px;
+        }
 
-    @include tablet {
-        margin-bottom: 32px;
-    }
-
-    @include desktop {
-        margin-bottom: 40px;
-    }
-}
-
-.advantages__number {
-    margin-bottom: 16px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.22;
-    letter-spacing: 0.04em;
-    color: #FCFCFC;
-
-    @include tablet {
-        margin-bottom: 12px;
+        @include desktop {
+            margin-bottom: 40px;
+        }
     }
 
-    @include desktop {
-        margin-bottom: 12px;
-    }
-}
+    &__number {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.22;
+        letter-spacing: 0.04em;
+        color: #FCFCFC;
 
-.advantages__preTitle {
-    display: inline-flex;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.66;
-    color: $text-title-color;
-    width: 230px;
+        @include tablet {
+            margin-bottom: 12px;
+        }
 
-    @include tablet {
-        width: 152px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
+        @include desktop {
+            margin-bottom: 12px;
+        }
     }
 
-    @include desktop {
-        width: 368px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.75;
+    &__preTitle {
+        display: inline-flex;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.66;
+        color: $text-title-color;
+        width: 230px;
+
+        @include tablet {
+            width: 152px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
+        @include desktop {
+            width: 368px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.75;
+        }
     }
 }
