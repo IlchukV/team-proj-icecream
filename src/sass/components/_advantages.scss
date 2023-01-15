@@ -3,6 +3,19 @@
     padding: 60px 0 178px;
     background-color: $mobile-button-color;
     position: relative;
+    margin: 0 auto;
+    
+    @include mobile {
+            width: 480px;
+        }
+    @include tablet {
+            width: 768px;
+        }
+    
+        @include desktop {
+            width: 1200px;
+            height: 100%;
+        }
 }
 
 .advantages__title {

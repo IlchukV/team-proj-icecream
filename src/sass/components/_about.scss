@@ -6,10 +6,9 @@
   align-items: center;
   margin: 0 auto;
 
-
-  // @include mobile {
-  //   width: 360px;
-  // }
+  @include mobile {
+      width: 480px;
+    }
 
   @include tablet {
     width: 768px;
@@ -32,7 +31,7 @@
   margin-left: auto;
 
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$tablet) {
     font-weight: 800;
     font-size: 22px;
     line-height: 27px;
@@ -40,7 +39,7 @@
     letter-spacing: 0.04em;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:$desktop) {
     font-weight: 800;
     font-size: 30px;
     line-height: 37px;
@@ -61,20 +60,20 @@
   padding-bottom: 32px;
 
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $mobile) {
     width: 200px;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$tablet) {
     font-size: 34px;
     line-height: 43px;
     letter-spacing: 0.06em;
     padding-bottom: 72px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:$desktop) {
     font-size: 36px;
     line-height: 45px;
     padding-bottom: 82px;
@@ -82,7 +81,7 @@
 }
 
 .about__block {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$tablet) {
     display: flex;
   }
 }
@@ -96,13 +95,12 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $link-button-color;
-  // linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-  //   #D9D9D9;
+  
     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
 border-radius: 50%;
 padding-top: 22px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$tablet) {
     justify-content: left;
     margin-left: 17px;
     margin-top: 0px;
@@ -112,7 +110,7 @@ padding-top: 22px;
     height: 330px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:$desktop) {
     width: 490px;
     height: 490px;
     margin-bottom: 39px;
@@ -123,12 +121,12 @@ padding-top: 22px;
 
 
 .about__list {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$tablet) {
     margin-left: 38px;
 
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:$desktop) {
     margin-left: 109px;
   }
 }
@@ -140,18 +138,18 @@ padding-top: 22px;
   margin-left: auto;
   padding-bottom: 10px;
 
-  @media screen and (min-width:480px) {
+  @media screen and (min-width:$mobile) {
     padding-bottom: 24px;
 
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$tablet) {
     padding-bottom: 32px;
     margin-left: 0;
     width: 334px;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:$desktop) {
     padding-bottom: 54px;
     width: 463px;
     align-items: center;
@@ -164,7 +162,7 @@ padding-top: 22px;
   line-height: 176%;
   letter-spacing: 0.04em;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$mobile) {
     text-align: left;
 
   }
@@ -182,13 +180,13 @@ padding-top: 22px;
   text-align: center;
 
   //767
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$mobile) {
     line-height: 176%;
     letter-spacing: 0.04em;
     text-align: left;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:$desktop) {
     font-size: 14px;
     line-height: 194%;
   }
@@ -199,7 +197,7 @@ padding-top: 22px;
     display: none;
   }
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:$mobile) {
     font-weight: 400;
     font-size: 12px;
     line-height: 194%;
@@ -207,7 +205,7 @@ padding-top: 22px;
     text-align: left;
   }
 
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width:$desktop) {
     font-weight: 400;
     font-size: 14px;
     line-height: 194%;
@@ -236,6 +234,7 @@ padding-top: 22px;
   margin-right: auto;
   background-color: $link-button-color;
   color: $modal-button-color;
+  cursor: url('/src/images/cursor.png'), pointer;
 
   @media screen and (min-width:768px) {
     margin-left: 0;
@@ -255,5 +254,15 @@ padding-top: 22px;
 
 .about__svg {
   margin-left: 8px;
+
+@media screen and (min-width: $desktop) {
+  &:hover {
+      color: $modal-button-color;
+    }
+  
+    &:focus {
+      color: $text-title-color;
+    }
+  }
 }
 
