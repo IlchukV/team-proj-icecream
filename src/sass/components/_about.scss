@@ -1,0 +1,262 @@
+.about {
+  padding-top: 60px;
+  padding-bottom: 0;
+  color: $text-title-color;
+  background-color: $background-color-secondary;
+  align-items: center;
+  margin: 0 auto;
+
+
+  // @include mobile {
+  //   width: 360px;
+  // }
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1200px;
+    height: 100%;
+  }
+}
+
+.about__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+  margin-right: auto;
+  margin-left: auto;
+
+
+  @media screen and (min-width:768px) {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+
+
+  @media screen and (max-width: 480px) {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width:768px) {
+    font-size: 34px;
+    line-height: 43px;
+    letter-spacing: 0.06em;
+    padding-bottom: 72px;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 36px;
+    line-height: 45px;
+    padding-bottom: 82px;
+  }
+}
+
+.about__block {
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
+}
+
+.about__korovka {
+  margin-top: 0;
+  justify-content: center;
+  margin-bottom: 40px;
+  width: 278px;
+  height: 279px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $link-button-color;
+  // linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+  //   #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+border-radius: 50%;
+padding-top: 22px;
+
+  @media screen and (min-width:768px) {
+    justify-content: left;
+    margin-left: 17px;
+    margin-top: 0px;
+    margin-right: 0;
+    padding-top: 25x;
+    width: 330px;
+    height: 330px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 490px;
+    height: 490px;
+    margin-bottom: 39px;
+    margin-top: 0;
+    padding-top: 39px;
+  }
+}
+
+
+.about__list {
+  @media screen and (min-width:768px) {
+    margin-left: 38px;
+
+  }
+
+  @media screen and (min-width:1200px) {
+    margin-left: 109px;
+  }
+}
+
+.about__text {
+  width: 220px;
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
+
+  @media screen and (min-width:480px) {
+    padding-bottom: 24px;
+
+  }
+
+  @media screen and (min-width:768px) {
+    padding-bottom: 32px;
+    margin-left: 0;
+    width: 334px;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding-bottom: 54px;
+    width: 463px;
+    align-items: center;
+  }
+}
+
+.about_p1 {
+  text-align: center;
+  font-size: 12px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width:768px) {
+    text-align: left;
+
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 16px;
+    margin-top: 90px;
+
+  }
+}
+
+.about_p2 {
+  font-size: 12px;
+  line-height: 162%;
+  text-align: center;
+
+  //767
+  @media screen and (min-width:768px) {
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+    line-height: 194%;
+  }
+}
+
+.about__p3 {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width:768px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    text-align: left;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__button {
+  width: 164px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $link-button-color;
+  color: $modal-button-color;
+
+  @media screen and (min-width:768px) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width:1200px) {
+    &:hover {
+      background-color: $hover-button-color;
+      color: $modal-button-color;
+    }
+
+    &:focus {
+      color: $text-title-color;
+    }
+  }
+}
+
+.about__svg {
+  margin-left: 8px;
+@media screen and (min-width:1200px) {
+  &:hover {
+      color: $modal-button-color;
+    }
+  
+    &:focus {
+      color: $text-title-color;
+    }
+}
+  
+}
