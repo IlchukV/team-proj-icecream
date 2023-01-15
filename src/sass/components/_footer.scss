@@ -6,6 +6,11 @@
     align-items: center;
     justify-content: flex-end;
 
+
+    @media screen and (max-width: 767px) {
+        height: 1620px;
+    }
+
     @include mobile {
         width: 480px;
     }
