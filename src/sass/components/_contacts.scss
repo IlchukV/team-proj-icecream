@@ -262,6 +262,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     @media screen and (max-width: 767.95px) {
         flex-direction: column;
@@ -279,6 +280,7 @@
         font-size: 14px;
         line-height: 1.29;
         text-align: center;
+        cursor: url('/src/images/cursor.png'), pointer;
     }
 
 
@@ -321,6 +323,7 @@
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
+    cursor: url('/src/images/cursor.png'), pointer;
 
     .contacts-button_icon-franchise {
         fill: currentColor;
