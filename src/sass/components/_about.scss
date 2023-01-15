@@ -87,13 +87,19 @@
 }
 
 .about__korovka {
-  margin-top: 22px;
+  margin-top: 0;
   justify-content: center;
   margin-bottom: 40px;
   width: 278px;
   height: 279px;
   margin-left: auto;
   margin-right: auto;
+  background-color: $link-button-color;
+  // linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+  //   #D9D9D9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+border-radius: 50%;
+padding-top: 22px;
 
   @media screen and (min-width:768px) {
     justify-content: left;
@@ -106,6 +112,8 @@
     width: 490px;
     height: 490px;
     margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 39px;
   }
 }
 
@@ -233,9 +241,18 @@
       color: $text-title-color;
     }
   }
+}
 
-  // &:disabled {
-  //   background-color: #ABABAB;
-  //   color: #000000
-  // }
+.about__svg {
+  margin-left: 8px;
+@media screen and (min-width:1200px) {
+  &:hover {
+      color: #000000;
+    }
+  
+    &:focus {
+      color: $text-title-color;
+    }
+}
+  
 }
