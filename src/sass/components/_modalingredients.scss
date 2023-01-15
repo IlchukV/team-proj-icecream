@@ -1,5 +1,5 @@
 .backdrop {
-    position: fixed;
+
     top: 0;
     left: 0;
     width: 100%;
@@ -13,25 +13,31 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 568px;
-    height: 996px;
-    padding: 32px 40px;
+    width: 280px;
+    height: 968px;
+    padding: 28px 20px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms linear, visibility 500ms linear;
     background-color: #FCFCFC;
     border-radius: 10px;
+    
+    @media screen and (min-width:768px) {
+        width: 568px;
+        height: 996px;
+        padding: 32px 40px; 
+    }
 }
 
-.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-.backdrop.is-hidden .modal-ingredients {
+.modal-ingredients.is-hidden {
     transform: translate(-50%, -50%) scale(0);
 }
-
+ 
 .modal-ingredients__close {
     position: absolute;
     top: 12px;
@@ -43,22 +49,25 @@
     background-color: transparent;
     scale: 1; 
     transition: scale 250ms linear;
-    
-        &:hover,
-        &:focus {
-            scale:1.2 ;
-        } 
+    &:hover,
+    &:focus {
+        scale:1.2 ;
+    } 
 }
 
 .modal-ingredients__icon {}
 
 .modal-ingredients__title {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-family: 'Seymour One';
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
     text-align: center;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 24px;
+    }
 }
 
 .modal-ingredients__thumb {
@@ -66,11 +75,15 @@
     height: 139px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     background-image: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7));
     background-color: #D9D9D9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     border-radius: 50%;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 24px;
+    }
 }
 
 .modal-ingredients__image {
@@ -80,44 +93,58 @@
 }
 
 .ingredients-figure {
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     text-align: center;
     font-weight: 500;
     font-size: 10px;
-    line-height: 28px;
-    color: #131313;
+    line-height: 2.8;
+    color: $text-main-color;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 48px;
+        font-size: 12px;
+        line-height: 2.3;
+    }
 }
 
 .ingredients-figure__oval {
-    position: relative;
-    width: 65px;
-    height: 90px;
-    padding-top: 60px;
-    margin-bottom: 48px;
+    width: 53px;
+    height: 72px;
     border: 2px solid #9CBE8F;
     border-radius: 40px;
-}
 
-.ingredients-figure__oval:not(:last-child) {
-    margin-right: 20px;
+    @media screen and (min-width:768px) {
+        width: 65px;
+        height: 90px;
+    }
+
+    &:not(:last-child) {
+    margin-right: 9px;
+    @media screen and (min-width:768px) {
+        margin-right: 20px;
+        }
+    }
 }
 
 .ingredients-figure__circle {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: -1px auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 53px;
-    height: 53px;
+    width: 43px;
+    height: 43px;
 
     background-color: #9CBE8F;
     border: 2px solid #9CBE8F;
     border-radius: 50%;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+    @media screen and (min-width:768px) {
+        width: 53px;
+        height: 53px;
+    }
 }
 
 .modal-ingredients__subtitle {
@@ -128,11 +155,16 @@
 }
 
 .ingredients-list {
-    width: 488px;
-    margin-bottom: 48px;
+    width: 240px;
+    margin-bottom: 40px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.76;
+
+    @media screen and (min-width:768px) {
+        width: 488px;
+        margin-bottom: 48px;
+    }
 }
 
 .ingredients-list__item {
@@ -152,27 +184,55 @@
 
 .ingredients-form__input,
 .ingredients-form__comment {
-    width: 368px;
-    padding: 11px 16px;
+    width: 240px;
+    padding: 11px;
 
     background-color: rgba(248, 210, 78, 0.1);
     border: 1px solid #84A178;
     border-radius: 10px;
+    transition: border-color 250ms linear;
+    &:hover, &:focus {
+        // outline-color: transparent;
+        outline-color: #F8D24E;
+        border-color: #F8D24E;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 368px;
+        padding: 11px 16px;
+    }
 }
 
 .ingredients-form__input {
     height: 42px;
     margin-bottom: 16px;
 }
+ 
+.ingredients-form__input:not(:focus):not(:placeholder-shown):required:invalid {
+        background-color: rgba(248, 104, 78, 0.171);
+        border-color: #e92705;
+}
+
+
+// .ingredients-form__input:required:invalid .ingredients-form__submit:disabled {
+//     background-color: #ABABAB;
+//         border-color: #ABABAB;
+// }
+
+
 
 .ingredients-form__comment {
     height: 84px;
     resize: none;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+    }
 }
 
 .ingredients-form__submit {
-    width: 121px;
+    width: 132px;
     height: 42px;
 
     background-color: #F8D24E;
@@ -181,4 +241,60 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
+    transition: background-color 250ms linear, border-color 250ms linear, color 250ms linear;
+    &:hover, &:focus {
+        background-color: $hover-button-color;
+        border-color:$hover-button-color;
+    }
+    &:focus {
+        color:$text-title-color;
+    }
+    @media screen and (min-width:768px) {
+        width: 121px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+.products__primary::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -180px;
+    width: 302px;
+    height: 318px;
+    display: block;
+    transform: translateX(-50%);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    background-image: url(../images/creambrule.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    background-color: #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+}
+
+
+
+.products__secondary {
+    background-image: url(../images/dobleice.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    background-repeat: no-repeat;
+    background-position: 0 39px, 0;
+    background-size: contain;
+    width: 490px;
+    height: 529px;
+    margin-top: 200px;
+    background-color: #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    border-radius: 250px;
+}
+

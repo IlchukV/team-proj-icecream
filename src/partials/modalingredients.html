@@ -1,13 +1,20 @@
-<div class="backdrop" data-modal>
-    <div class="modal-ingredients">
-        <button class="modal-ingredients__close btn" data-modal-close>
+
+
+
+<button type="button" class="btn js-open-modal" data-modal="ingr">X</button>
+
+
+<div class="backdrop js-overlay-modal is-hidden">
+    <div class="modal modal-ingredients is-hidden" data-modal="ingr">
+        <button class="modal-ingredients__close btn js-modal-close">
             <svg class="modal-ingredients__icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-close-1"></use>
             </svg>
         </button>
         <p class="modal-ingredients__title">Chololate icecream</p>
         <div class="modal-ingredients__thumb">
-            <img src="./images/chocolateice_modal.png" alt="Chololate icecream" class="modal-ingredients__image">
+            <img srcset="./images/chocolateice_modal.png 1x, ./images/chocolateice_modal@2x.png 2x"
+             src="./images/chocolateice_modal.png" alt="Chololate icecream" class="modal-ingredients__image">
         </div>
 
         <ul class="ingredients-figure list">
@@ -59,18 +66,17 @@
 
         </ul>
 
-        <form action="" class="ingredients-form">
-            <input type="text" class="ingredients-form__input" id="name" name="name" placeholder="Name">
-            <input type="tel" class="ingredients-form__input" id="tel" name="tel" placeholder="Phone">
+        <form class="ingredients-form">
+            <input type="text" class="ingredients-form__input" id="name" name="name" pattern="[^\d]+" placeholder="Name" required minlength="2" >
+            <input type="tel" class="ingredients-form__input" id="tel" name="tel" pattern="[-+\d]+" placeholder="Phone" required >
             <textarea class="ingredients-form__comment" name="comment" id="comment" placeholder="Comment"></textarea>
             <button type="submit" class="ingredients-form__submit btn">Submit</button>
         </form>
 
-
-
-
-
-
-
     </div>
 </div>
+
+
+<div class="products__primary">vbj</div>
+
+        <div class="products__secondary"></div>
