@@ -68,6 +68,13 @@
         padding-left: 40px;
     }
 
+    @include desktop {
+        .contacts_blocks-item:hover {
+            box-shadow: 0px 0px 21px 10px rgba(22, 210, 210, 0.38);
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+
 
     &_item-type {
         @media screen and (max-width: 767.95px) {
