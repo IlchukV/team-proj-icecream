@@ -1,3 +1,11 @@
+
+import './js/swiper';
+
+
+
+
+
+
 // mobile-menu
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
@@ -15,6 +23,12 @@
   };
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+    })
+   } );
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.

@@ -1,0 +1,136 @@
+.header {
+  position: relative;
+}
+.header-page {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 14px;
+  background-color: $background-color-secondary;
+  @include mobile {
+    padding-top: 20px;
+  }
+  @include tablet {
+    width: 768px;
+    padding-top: 20px;
+  }
+  @include desktop {
+    width: 1200px;
+    padding-top: 8px;
+  }
+}
+.logo {
+  width: 40px;
+  @include mobile {
+    height: 44px;
+  }
+  @include desktop {
+    width: 60px;
+    height: 65px;
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.js-open-menu {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  height: 40px;
+  width: 40px;
+  // cursor: pointer;
+  @include tablet {
+    margin-right: 32px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.js-open-menu .icon-menu {
+  display: none;
+}
+.js-open-menu.is-open .icon-menu {
+  display: block;
+}
+.js-open-menu.is-open .icon-close {
+  display: none;
+}
+
+.navigation {
+  display: none;
+  @include desktop {
+    display: block;
+    margin-bottom: 12px;
+  }
+}
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: $text-title-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $link-button-color;
+  }
+}
+
+.header-page__button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 36px;
+  color: $text-main-color;
+  background-color: $link-button-color;
+  border-radius: 10px;
+  border-style: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.21;
+  // cursor: pointer;
+
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $hover-button-color;
+  }
+  &:focus {
+    background-color: $hover-button-color;
+    color: $text-title-color;
+  }
+  &:default {
+    background-color: $link-button-color;
+  }
+
+  @include tablet {
+    display: inline-block;
+  }
+}
+.header-page__icon {
+  fill: currentColor;
+  margin-left: 4px;
+}

@@ -1,0 +1,129 @@
+.js-menu-container {
+  position: absolute;
+  top: 0px;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  position: fixed;
+  background-color: $mobile-button-color;
+  text-align: center;
+  padding: 100px 0;
+  overflow-y: scroll;
+
+  transition: right 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include desktop {
+    display: none;
+  }
+}
+.js-menu-container.is-open {
+  right: 0;
+}
+body.js-menu-container.is-open {
+  overflow: hidden;
+}
+
+
+.mobile-menu__logo {
+  position: absolute;
+  top: 12px;
+  left: 32px;
+  width: 32px;
+  height: 32px;
+
+  @include mobile {
+    top: 20px;
+    left: 20px;
+    width: 48px;
+    height: 44px;
+  }
+}
+
+.js-close-menu {
+  padding: 0;
+  background-color: $mobile-button-color;
+  fill: $text-title-color;
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+
+  @include mobile {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.mobile-menu__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21;
+  color: $text-title-color;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $text-main-color;
+  }
+  &:focus {
+    color: $text-title-color;
+  }
+  &:default {
+    color: $link-button-color;
+  }
+  @include tablet {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.23;
+  }
+}
+
+.mobile-menu__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+  background: $link-button-color;
+  border-radius: 10px;
+  padding: 12px 35px;
+  border-style: none;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: $text-main-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: $hover-button-color;
+  }
+  &:focus {
+    background-color: $hover-button-color;
+    color: $text-title-color;
+  }
+  &:default {
+    background-color: $link-button-color;
+  }
+  @include mobile {
+    margin-top: 114px;
+  }
+  @include tablet {
+    margin-top: 60px;
+  }
+}
+.mobile-menu__svg {
+  fill: currentColor;
+  margin-left: 4px;
+}
