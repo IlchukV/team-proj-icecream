@@ -46,37 +46,47 @@
 }
 
 .customer-reviews__photo {
-    width: 85px;
-    height: 85px;
+    width: 150px;
+    height: 150px;
     margin: 0 auto 32px auto;
     border-radius: 50%;
     background-color: $background-color-secondary;
-    background-size: contain;
+    background-size: cover;
 }
 
-// .customer-reviews__photo--emily {
-//     background-image: url(../images/emily.jpg);
-//     @include retina {
-//             & {
-//                 background-image: url(../images/emily@2x.jpg);
-//             }
-// }
+.customer-reviews__photo--vadim {
+    background-image: url(../images/vadim.jpg);
+    background-size: contain;
+    background-position: center;
+}
 
-// .customer-reviews__photo--bryan {
-//     background-image: url(../images/bryan.jpg);
-//     @include retina {
-//             & {
-//                 background-image: url(../images/bryan@2x.jpg);
-//             }
-// }
+.customer-reviews__photo--sofia {
+    background-image: url(../images/sofia.jpg);
+}
 
-// .customer-reviews__photo--diana {
-//     background-image: url(../images/diana.jpg);
-//     @include retina {
-//             & {
-//                 background-image: url(../images/diana@2x.jpg);
-//             }
-// }
+.customer-reviews__photo--nikita {
+    background-image: url(../images/nikita.jpg);
+}
+
+.customer-reviews__photo--halyna {
+    background-image: url(../images/halyna.jpg);
+}
+
+.customer-reviews__photo--ivan {
+    background-image: url(../images/ivan.jpg);
+}
+
+.customer-reviews__photo--sveta {
+    background-image: url(../images/sveta.jpg);
+}
+
+.customer-reviews__photo--dmitriy {
+    background-image: url(../images/dmitriy.jpg);
+}
+
+.customer-reviews__photo--anzhela {
+    background-image: url(../images/anzhela.jpg);
+}
 
 .customer-reviews__text {
     display: block;
