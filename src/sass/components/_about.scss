@@ -83,8 +83,9 @@
 .about__block {
   @media screen and (min-width:$tablet) {
     display: flex;
+    padding-bottom: 30px;
   }
-}
+} 
 
 .about__korovka {
   margin-top: 0;
