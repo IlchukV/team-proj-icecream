@@ -1,7 +1,7 @@
 .gallery {
     display: flex;
     justify-content: center;
-    
+
     border-radius: 38px;
 }
 
@@ -12,56 +12,55 @@ img {
     object-fit: fill;
 }
 
-.sim-slider {
-        position: absolute;
-        margin-top: -32px;
-        padding: 0;
-        // width: 280px;
-        // height: 130px;
-        border-radius: 8px;
-        background-repeat: no-repeat;
-        background-size: contain;
-       
-    @include mobile {
-            width: 440px;
-            height: 204px;
-            margin-top: -27px;
-            border-radius: 8px;
-        }
-    
-        @include tablet {
-            width: 704px;
-            height: 327px;
-            margin-top: -144px;
-            border-radius: 18px;
-            
-        }
-    
-        @include desktop {
-            width: 1013px;
-            height: 422px;
-            margin-top: -98px;
-            border-radius: 24px;
-            background-image: url(/src/images/manyicecream-desktop.jpg);
-    
-        }
-}
-
-.sim-slider-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    position: relative;
-}
-
-
-.sim-slider-element {
-    width: 100%;
-    transition: opacity 1s ease-in;
-    opacity: 0;
+.gallery__img {
     position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    display: block;
+    margin-top: -32px;
+    width: 280px;
+    height: 130px;
+    background-size: contain;
+    background-image: url(/src/images/manyicecream.jpg);
+    background-repeat: no-repeat;
+    contain: contain;
+
+    border-radius: 8px;
+
+    @include mobile {
+        width: 440px;
+        height: 204px;
+        margin-top: -27px;
+        border-radius: 8px;
+    }
+
+    @include tablet {
+        width: 704px;
+        height: 327px;
+        margin-top: -144px;
+        border-radius: 18px;
+
+    }
+
+    @include desktop {
+        width: 1013px;
+        height: 422px;
+        margin-top: -98px;
+        border-radius: 24px;
+        background-image: url(/src/images/manyicecream-desktop.jpg);
+
+    }
+
+    animation-name: changeBg;
+    animation-duration: 5000ms;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+
+
+    @keyframes changeBg {
+        33% {
+            background-image: url(/src/images/1icegallery.jpg);
+        }
+
+        66% {
+            background-image: url(/src/images/2icegallery.jpg);
+        }
+    }
 }
