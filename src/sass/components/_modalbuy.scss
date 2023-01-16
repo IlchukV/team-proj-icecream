@@ -18,13 +18,22 @@
 
     text-align: center;
 }
+.products__list--mobile {
+    width: auto;
+    padding-top: 83px;
+    padding-bottom: 11px;
+}
 .products__item--mobile {
     padding: 95px 13px 21px 13px;
     width: 136px;
     min-height: 136px;
+    margin-right: auto;
+    margin-left: auto;
     
 }
-
+.products__item--mobile:not(:last-child) {
+    margin-bottom: 80px;
+}
 .products__item--mobile:before {
     content: "";
     
@@ -78,7 +87,6 @@
     color: #131313;
     margin-bottom: 0;
 }
-
 
 
 
