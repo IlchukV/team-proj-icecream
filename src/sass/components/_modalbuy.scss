@@ -22,7 +22,7 @@
     border-radius: 10px;
     border: 2px solid $link-button-color;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         width: 568px;
         padding: 32px 40px;
     }
@@ -55,7 +55,7 @@
         scale: 1.2;
     }
 }
-
+// --------------------------//------------------//
 .buy__title {
     font-weight: 400;
     font-size: 16px;
@@ -67,19 +67,68 @@
 
     text-align: center;
 }
+
+.products__subtitle--mobile {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-main-color;
+    margin-bottom: 0;
+}
+
 .products__list--mobile {
     width: auto;
     padding-top: 83px;
     padding-bottom: 11px;
 }
+
 .products__item--mobile {
     padding: 95px 13px 21px 13px;
     width: 136px;
     min-height: 136px;
     margin-right: auto;
     margin-left: auto;
-    
+
+    &:nth-child(1):before {
+        box-shadow: 0px 7px 4px 0px $figure-color;
+    }
+    &:nth-child(2):before {
+        box-shadow: 0px 7px 4px 0px $link-button-color;
+    }
+    &:nth-child(3):before {
+        box-shadow: 0px 9px 1px -2px #D5753F;
+    }
+    &:nth-child(1) {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid $icecream-card-color;
+        filter: drop-shadow(0px 5.26027px 19.726px $box-shadow);
+        border-radius: 15px;
+    }
+    &:nth-child(2) {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid
+        $icecoffee-card-color;
+        filter: drop-shadow(0px 5.26027px 19.726px $box-shadow);
+        border-radius: 15px;
+    }
+    &:nth-child(3) {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid
+        $milkshakes-card-color;
+        filter: drop-shadow(0px 5.26027px 19.726px $box-shadow);
+        border-radius: 15px;
+    }
+    &:not(:last-child) {
+        margin-bottom: 82px;
+    }
+        
 }
+
 
 .products__item--mobile:before {
     content: "";
@@ -97,197 +146,43 @@
     
     
 }
-.products__item--mobile:nth-child(1):before {
-    box-shadow: 0px 7px 4px 0px rgba(150,175,140,1);
-}
-.products__item--mobile:nth-child(2):before {
-    box-shadow: 0px 7px 4px 0px rgba(248,210,78,1);
-}
-.products__item--mobile:nth-child(3):before {
-    box-shadow: 0px 9px 1px -2px rgba(213,117,63,1);
-}
 
-.products__item--mobile:nth-child(1) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #96AF8C;
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-    border-radius: 15px;
-}
-.products__item--mobile:nth-child(3) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px solid
-    #D6936D;
-    filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-    border-radius: 15px;
-}
-.products__subtitle--mobile {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-/* identical to box height */
-
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #131313;
-    margin-bottom: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.fanchise__modal-form{ 
-    margin-top: 20px; 
-} 
- 
- 
-.modal__label { 
-    margin-bottom: 12px; 
-        display: flex; 
-        flex-direction: column; 
-     
-        &:nth-of-type(4n) { 
-            margin-bottom: 12px; 
-        } 
-} 
- 
-.modal__input { 
-    background: rgba(248, 210, 78, 0.1); 
-        border: 1px solid $background-color; 
-        border-radius: 10px; 
-        width: 368px; 
-        height: 32px; 
-        margin: 0 auto;
-        padding-left: 12px; 
-        font-size: 12px; 
-        line-height: 140%; 
-        font-family: 'Montserrat'; 
-        color: $text-main-color; 
-        transition: 
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-         
-            &:focus { 
-                border-color: $hover-button-color; 
-            } 
- 
-        @include mobile{ 
-            height: 42px; 
- 
-            &::placeholder { 
-                font-size: 12px; 
-                    line-height: 140%; 
-                    color: $text-main-color; 
- 
-        @include desktop{ 
-            font-size: 14px; 
-                line-height: 140%; 
-        } 
- 
-        } 
-    } 
- 
-} 
- 
-.modal__feedback { 
-    flex-direction: column; 
-        margin-bottom: 24px; 
-        display: flex; 
-        width: 100%; 
-        // height: 64px; 
- 
-        @include desktop{ 
-            // height: 84px; 
-            margin-bottom: 32px; 
-        } 
-} 
- 
-  .feedback { 
-    display: block; 
+// -------------------------Modal from Franshize-------//
+.modal__input--mobile {
+    @include tablet {
         width: 368px;
-            height: 62px;
-            margin: 0 auto;
-        padding-left: 12px; 
-        font-size: 12px; 
-        line-height: 140%; 
-        background: rgba(248, 210, 78, 0.1); 
-        border: 1px solid $background-color; 
-        border-radius: 10px; 
- 
-        color: $text-main-color; 
-            transition: 
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-         
-            &:focus { 
-                border-color: $hover-button-color; 
-            } 
-                @include mobile { 
-                    height: 64px; 
- 
-                    &::placeholder { 
-                        font-size: 12px; 
-                        line-height: 140%; 
-                        color: $text-main-color; 
- 
-                        @include desktop { 
-                            font-size: 14px; 
-                            line-height: 140%; 
-                        } 
- 
-                @include desktop{ 
-                    min-width: 368px; 
-                        max-height: 84px; 
-                } 
- 
-    } 
-} 
-}                                                                       
-.submit__btn { 
-    font-weight: 600; 
-        font-size: 12px; 
-        line-height: calc(15/12); 
-        display: flex; 
-        align-items: center; 
-        text-align: center; 
-        color: $text-main-color; 
-        width: 114px; 
-        height: 42px; 
-        background: $link-button-color; 
-        border-radius: 10px; 
-        border: none; 
-        padding: 12px 34px; 
-        margin: 0 auto; 
-        transition: 
-            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-        &:hover, 
-        &:focus { 
-            background-color: $hover-button-color; 
-            } 
+    }
 }
+.modal__label--buy {
+    @include tablet {
+    align-items: center;
+    margin-bottom: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
