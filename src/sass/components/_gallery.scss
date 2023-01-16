@@ -42,17 +42,17 @@
     }
 
     animation-name: changeBg;
-    animation-duration: 10000ms;
+    animation-duration: 5000ms;
     animation-timing-function: steps(1);
     animation-iteration-count: infinite;
-} 
+}   
 
 @keyframes changeBg {
-    50% {
+    33% {
         background-image: url(/src/images/manyicescream_3@2x.jpg);
     }
     
-    100% {
+    66% {
         background-image: url(/src/images/manyicescream_4@2x.jpg);
     }
 }
