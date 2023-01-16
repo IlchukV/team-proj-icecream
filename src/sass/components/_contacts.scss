@@ -8,16 +8,16 @@
 
     &_list {
         position: absolute;
-        top: -125px;
+        top: -270px;
 
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+        @media screen and (min-width: $tablet)  {
             position: absolute;
-            top: -340px;
+            top: -260px;
         }
 
-        @media screen and (max-width: 767.95px) {
+        @media screen and (min-width: $desktop) {
             position: absolute;
-            top: -430px;
+            top: -70px;
         }
     }
 
