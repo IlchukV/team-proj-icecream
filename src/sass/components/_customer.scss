@@ -9,21 +9,21 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media screen and (min-width: 480px) {
+    @include mobile {
         padding-top: 260px;
     }
 
     @media screen and (max-width: 767px) {
-        max-width: 480px;
+        max-width: $mobile;
         @include retina {
             & {
                 background-image: url(../images/Backgroud_mobile@2x.jpg);
             }
         }
     }
-    @media screen and (min-width: 768px) {
+    @include tablet {
         padding: 300px 0 350px;
-        width: 768px;
+        width: $tablet;
         background-image: url(../images/Background_tablet.jpg);
 
         @include retina {
@@ -32,9 +32,9 @@
             }
         }
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         padding: 450px 0 180px;
-        width: 1200px;
+        width: $desktop;
         background-image: url(../images/Backgroud_desktop.jpg);
 
         @include retina {
@@ -94,7 +94,7 @@
     line-height: 2.55;
 
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         width: 705px;
         padding: 28px 80px;
         border-radius: 24px;
@@ -103,7 +103,7 @@
         font-weight: 500;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         width: 968px;
         font-size: 16px;
         padding: 43px 109px;
@@ -116,13 +116,13 @@
     font-size: 20px;
     line-height: 1.86;
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: 15px;
         font-size: 16px;
         font-weight: 400;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         font-weight: 500;
     }
 }
@@ -131,15 +131,15 @@
     position: static;
     margin-bottom: 25px;
 
-    @media screen and (min-width: 480px) {
+    @include mobile {
         margin-bottom: 35px;
     }
 
-    @media screen and (min-width: 768px) {
+    @include tablet {
         margin-bottom: 60px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
         margin-bottom: 50px;
     }
 } 
