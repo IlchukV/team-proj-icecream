@@ -84,7 +84,7 @@
 .products__list--mobile {
     width: auto;
     padding-top: 83px;
-    padding-bottom: 11px;
+    padding-bottom: 40px;
 }
 
 .products__item--mobile {
@@ -123,10 +123,7 @@
         filter: drop-shadow(0px 5.26027px 19.726px $box-shadow);
         border-radius: 15px;
     }
-    &:not(:last-child) {
-        margin-bottom: 82px;
-    }
-        
+   
 }
 
 
