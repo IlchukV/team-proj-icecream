@@ -132,6 +132,7 @@
             width: 173px;
         }
 
+        font-style: normal;
         width: 288px;
         padding-bottom: 32px;
         border-bottom: 1px solid rgba(225, 225, 225, 1);
@@ -146,6 +147,7 @@
             font-size: 14px;
         }
 
+        // font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.64;
@@ -178,6 +180,7 @@
     }
 
     &_days {
+        color: $text-main-color;
         font-size: 16px;
         line-height: 1.82;
 
