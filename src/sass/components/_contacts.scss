@@ -141,15 +141,12 @@
     &_link {
         @media screen and (max-width: 767.95px) {
             font-size: 12px;
-            // line-height: 1.83;
         }
 
         @media screen and (min-width: $tablet) and (max-width:1199.95px) {
             font-size: 14px;
-            // line-height: 1.83;
         }
 
-        // font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.83;
