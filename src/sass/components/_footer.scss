@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    margin-right: auto;
+        margin-left: auto;
 
 
     @media screen and (max-width: 767px) {
@@ -12,18 +14,18 @@
     }
 
     @include mobile {
-        width: 480px;
+        // width: 480px;
     }
 
     @include tablet {
         height: 625px;
-        width: 768px;
+        // width: 768px;
         flex-direction: row;
         align-items: flex-end;
     }
 
     @include desktop {
-        width: 1200px;
+        // width: 1200px;
         height: 862px;
         padding-bottom: 60px;
     }
@@ -163,10 +165,6 @@
     
 }
 
-// .footer-contacts__tel-link {
-//     color:#FCFCFC;
-    
-// }
 
 .footer-autors {
     position: relative;
@@ -180,16 +178,16 @@
     justify-content: center;
     
     @include mobile {
-        width: 480px;
+        // width: 480px;
     }
 
     @include tablet {
-        width: 768px;
+        // width: 768px;
         padding: 12px;
     }
 
     @include desktop {
-        width: 1200px;
+        // width: 1200px;
         
     }
 }
@@ -204,7 +202,7 @@
     background-color: #E1E1E1;
 
     @include desktop {
-        width: 1167px;
+        // width: 1167px;
     }
 }
 

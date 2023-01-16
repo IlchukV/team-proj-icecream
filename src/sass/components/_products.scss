@@ -15,14 +15,14 @@
     }
     @media screen and (min-width:768px) {
         background-image: url(../images/Background_tablet.jpg);
-        width: 768px;
+        // width: 768px;
         @include retina {
             background-image: url(../images/Background_tablet@2x.jpg);
         }    
     }
     @media screen and (min-width:1200px) {
         background-image: url(../images/Backgroud_desktop.jpg);
-        width: 1200px;
+        // width: 1200px;
         @include retina {
             background-image: url(../images/Backgroud_desktop@2x.jpg);
         }    

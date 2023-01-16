@@ -2,7 +2,7 @@
   position: relative;
 }
 .header-page {
-  width: 100%;
+  
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -10,13 +10,14 @@
   background-color: $background-color-secondary;
   @include mobile {
     padding-top: 20px;
+    // width: 480px;
   }
   @include tablet {
-    width: 768px;
+    // width: 768px;
     padding-top: 20px;
   }
   @include desktop {
-    width: 1200px;
+    // width: 1200px;
     padding-top: 8px;
   }
 }

@@ -14,7 +14,7 @@
     }
 
     @media screen and (max-width: 767px) {
-        max-width: $mobile;
+        // max-width: $mobile;
         @include retina {
             & {
                 background-image: url(../images/Backgroud_mobile@2x.jpg);
@@ -23,7 +23,7 @@
     }
     @include tablet {
         padding: 250px 0 270px;
-        width: $tablet;
+        // width: $tablet;
         background-image: url(../images/Background_tablet.jpg);
 
         @include retina {
@@ -34,7 +34,7 @@
     }
     @include desktop {
         padding: 450px 0 110px;
-        width: $desktop;
+        // width: $desktop;
         background-image: url(../images/Backgroud_desktop.jpg);
 
         @include retina {
