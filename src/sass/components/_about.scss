@@ -236,20 +236,22 @@ padding-top: 22px;
   color: $modal-button-color;
   cursor: url('/src/images/cursor.png'), pointer;
 
-  @media screen and (min-width:768px) {
-    margin-left: 0;
-  }
-    @include desktop {
-    &:hover {
+  &:hover {
       background-color: $hover-button-color;
       color: $modal-button-color;
       outline: none;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+  
     &:focus {
       color: $text-title-color;
       outline: none;
     }
+
+  @media screen and (min-width:768px) {
+    margin-left: 0;
   }
+  
 }
 
 .about__svg {
