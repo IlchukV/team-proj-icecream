@@ -499,6 +499,7 @@ img {
 .products {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
   color: #131313;
   text-align: center;
   letter-spacing: 0.04em;
@@ -515,6 +516,7 @@ img {
 @media screen and (min-width: 768px) {
   .products {
     background-image: url(../images/Background_tablet.jpg);
+    width: 768px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -525,6 +527,7 @@ img {
 @media screen and (min-width: 1200px) {
   .products {
     background-image: url(../images/Backgroud_desktop.jpg);
+    width: 1200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -818,6 +821,11 @@ img {
   align-items: center;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .about {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .about {
     width: 768px;
@@ -977,7 +985,7 @@ img {
   line-height: 176%;
   letter-spacing: 0.04em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .about_p1 {
     text-align: left;
   }
@@ -994,7 +1002,7 @@ img {
   line-height: 162%;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .about_p2 {
     line-height: 176%;
     letter-spacing: 0.04em;
@@ -1013,7 +1021,7 @@ img {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .about__p3 {
     font-weight: 400;
     font-size: 12px;
@@ -1031,6 +1039,11 @@ img {
   }
 }
 
+.about__svg:focus {
+  fill: #FCFCFC;
+  outline: none;
+}
+
 .about__button {
   width: 164px;
   height: 42px;
@@ -1046,19 +1059,21 @@ img {
   margin-right: auto;
   background-color: #F8D24E;
   color: #000000;
+  cursor: url("/src/images/cursor.png"), pointer;
+}
+.about__button:hover {
+  background-color: #0A8817;
+  color: #000000;
+  outline: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about__button:focus {
+  color: #FCFCFC;
+  outline: none;
 }
 @media screen and (min-width: 768px) {
   .about__button {
     margin-left: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about__button:hover {
-    background-color: #0A8817;
-    color: #000000;
-  }
-  .about__button:focus {
-    color: #FCFCFC;
   }
 }
 
@@ -1079,6 +1094,23 @@ img {
   padding: 60px 0 178px;
   background-color: #85A279;
   position: relative;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .advantages {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    width: 1200px;
+    height: 100%;
+  }
 }
 
 .advantages__title {
@@ -1702,6 +1734,7 @@ img {
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
+  cursor: url("/src/images/cursor.png"), pointer;
 }
 .contacts-button_icon-locations {
   fill: currentColor;
@@ -1742,6 +1775,7 @@ img {
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
+  cursor: url("/src/images/cursor.png"), pointer;
 }
 .contacts-button_franchise .contacts-button_icon-franchise {
   fill: currentColor;
@@ -2137,7 +2171,7 @@ body.js-menu-container.is-open {
   background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: scroll;
   opacity: 1;
 }
@@ -2164,7 +2198,7 @@ body.js-menu-container.is-open {
   min-width: 100%;
   max-height: 674px;
   padding: 28px 30px;
-  transition: 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .fanchise__modal {
   transform: translate(-50%, -50%) scaleX(1.5);
@@ -2867,7 +2901,7 @@ body.js-menu-container.is-open {
   top: 11px;
   right: 11px;
   border-radius: none;
-  cursor: pointer;
+  cursor: url("/src/images/cursor.png"), pointer;
   background-color: transparent;
   border: none;
 }
@@ -2899,7 +2933,7 @@ body.js-menu-container.is-open {
 
 .modal-read__video {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   height: 199px;
 }
 @media screen and (min-width: 768px) {
@@ -2930,6 +2964,7 @@ body.js-menu-container.is-open {
   width: 280px;
   height: auto;
   padding: 28px;
+  background-color: #fcfcfc;
 }
 
 .buy__title {
