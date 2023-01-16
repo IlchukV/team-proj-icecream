@@ -1,10 +1,59 @@
 
-.modal__buy {
-    width: 280px;
-    height: auto;
-    padding: 28px;
-    background-color: #fcfcfc;
+.backdrop {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 500ms linear, visibility 500ms linear;
+    background-color: $backdrop-bg;
+}
 
+.modal__buy {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    width: 280px;
+    padding: 28px 20px;
+    transform: translateX(-50%) scale(1);
+    transition: transform 500ms linear, visibility 500ms linear;
+    background-color: $background-modal-color;
+    border-radius: 10px;
+    border: 2px solid $link-button-color;
+
+    @media screen and (min-width:768px) {
+        width: 568px;
+        padding: 32px 40px;
+    }
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-buy.is-hidden {
+    transform: translateX(-50%) scale(0);
+}
+
+.modal-buy__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    scale: 1;
+    transition: scale 250ms linear;
+
+    &:hover,
+    &:focus {
+        scale: 1.2;
+    }
 }
 
 .buy__title {
@@ -31,9 +80,7 @@
     margin-left: auto;
     
 }
-.products__item--mobile:not(:last-child) {
-    margin-bottom: 80px;
-}
+
 .products__item--mobile:before {
     content: "";
     
@@ -134,8 +181,9 @@
     background: rgba(248, 210, 78, 0.1); 
         border: 1px solid $background-color; 
         border-radius: 10px; 
-        width: 100%; 
+        width: 368px; 
         height: 32px; 
+        margin: 0 auto;
         padding-left: 12px; 
         font-size: 12px; 
         line-height: 140%; 
@@ -182,8 +230,9 @@
  
   .feedback { 
     display: block; 
-        width: 100%; 
-        height: 64px; 
+        width: 368px;
+            height: 62px;
+            margin: 0 auto;
         padding-left: 12px; 
         font-size: 12px; 
         line-height: 140%; 
