@@ -1,63 +1,43 @@
 
-    <div class="modal modal__buy is-hidden" data-modal="buy">
+    <div class="modal modal-buy is-hidden" data-modal="buy">
         <button class="modal-buy__close btn js-modal-close">
             <svg class="modal-buy__icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-close-1"></use>
             </svg>
         </button>
-        <p class="buy__title">Buy now</p>
-        <ul class="products__list list products__list--mobile">
-            <li class="products__item products__item--mobile">
-                <h3 class="products__subtitle products__subtitle--mobile">ice cream</h3>
-            </li>
-            <li class="products__item products__item--mobile">
-                <h3 class="products__subtitle products__subtitle--mobile">ice coffee</h3>
-                </button>
-            </li>
-            <li class="products__item products__item--mobile">
-                <h3 class="products__subtitle products__subtitle--mobile">milkshake</h3>
-            </li>
-        </ul>
-        <form action="#" class="fanchise__modal-form "> 
-            <div class="modal__label"> 
-                <label class="" for="user-name"></label> 
-                    <input  
-                    type="text"  
-                    name="user-name"  
-                    class="form__user modal__input"  
-                    required id="user-name"  
-                    placeholder="Name"  
-                    required 
-                    /> 
-            </div> 
-            <div class="modal__label"> 
-                <label class="" for="user-tel"></label> 
-                    <input  
-                    type="tel"  
-                    name="user-tel"  
-                    class="form__user modal__input"  
-                    required id="user-tel" 
-                    placeholder="Phone" 
-                    required 
-                     /> 
-            </div> 
-            <div class="modal__label"> 
-                <label class="" for="user-mail"></label> 
-                    <input  
-                    type="email"  
-                    name="user-mail"  
-                    class="form__user modal__input"  
-                    required id="user-mail" 
-                    placeholder="Email" 
-                    required 
-                     /> 
-            </div> 
-            <div class="modal__feedback"> 
-                <label class="" for="feedback"></label> 
-                <textarea name="feedback" id="feedback" cols="10" rows="10" class="feedback" 
-                    placeholder="Comment"> 
-                    </textarea> 
-            </div> 
-            <button type="submit" class="submit__btn btn">Submit</button> 
+        <p class="modal-buy__title">Buy now</p>
+
+        <form class="buy-form">
+
+            <ul class="buy-checklist list">
+                <li class="buy-checklist__item">
+                    <label class="buy-checklist__label">
+                        <input class="buy-checklist__input visually-hidden" type="checkbox" name="buy-icecream" value="ice cream" checked />ice cream
+                    </label>
+                </li>
+                <li class="buy-checklist__item">
+                    <label class="buy-checklist__label">
+                        <input class="buy-checklist__input visually-hidden" type="checkbox" name="buy-icecream" value="ice coffee" checked />ice coffee
+                    </label>
+                </li>
+                <li class="buy-checklist__item">
+                    <label class="buy-checklist__label">
+                        <input class="buy-checklist__input visually-hidden" type="checkbox" name="buy-icecream" value="milkshake" />milkshake
+                    </label>
+                </li>
+            </ul>
+
+
+
+
+            <div class="buy-form__inputs">
+                <input type="text" class="buy-form__input" id="name" name="name" pattern="[^\d]+" placeholder="Name" required
+                    minlength="2">
+                <input type="tel" class="buy-form__input" id="tel" name="tel" pattern="[-+\d]+" placeholder="Phone" required>
+                <textarea class="buy-form__comment" name="comment" id="comment" placeholder="Comment"></textarea>
+                <button type="submit" class="buy-form__submit btn">Submit</button>
+            </div>
         </form>
+
+    
     </div>
