@@ -214,6 +214,7 @@
 
     @media screen and (max-width: 767.95px) {
         width: 195px;
+        padding-top: 24px;
     }
 
     @media screen and (min-width: $tablet) and (max-width:1199.95px) {
@@ -262,7 +263,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
     @media screen and (max-width: 767.95px) {
         flex-direction: column;
