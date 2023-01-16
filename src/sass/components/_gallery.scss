@@ -46,13 +46,27 @@ img {
             background-image: url(/src/images/manyicecream-desktop.jpg);
     
         }
+
+animation-name: changeBg;
+animation-duration: 5000ms;
+animation-timing-function: steps(1);
+animation-iteration-count: infinite;
+
+
+@keyframes changeBg {
+    33% {
+        background-image: url(/src/images/manyicescream_3@2x.jpg);
+    }
+
+    66% {
+        background-image: url(/src/images/manyicescream_4@2x.jpg);
+    }
 }
 
-.sim-slider-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    position: relative;
+
 }
 
+// @include retina {
+//     background-image: url(/src/images/manyicecream_desktop@2x.jpg);
+// }
 
