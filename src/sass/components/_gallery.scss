@@ -7,10 +7,10 @@
     margin-top: -32px;
     width: 280px;
     height: 130px;
-    background-size: contain;
+    background-size: cover;
     background-image: url(/src/images/manyicecream.jpg);
     background-repeat: no-repeat;
-    contain: contain;
+    
 
     border-radius: 8px; 
 
@@ -37,4 +37,22 @@
         
     }
 
-}   
+    @include retina {
+        background-image: url(/src/images/manyicecream-desktop.jpg);
+    }
+
+    animation-name: changeBg;
+    animation-duration: 10000ms;
+    animation-timing-function: steps(1);
+    animation-iteration-count: infinite;
+} 
+
+@keyframes changeBg {
+    50% {
+        background-image: url(/src/images/manyicescream_3@2x.jpg);
+    }
+    
+    100% {
+        background-image: url(/src/images/manyicescream_4@2x.jpg);
+    }
+}
