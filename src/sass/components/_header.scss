@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  background-color: $background-color-secondary;
 }
 .header-page {
   
@@ -17,7 +18,7 @@
     padding-top: 20px;
   }
   @include desktop {
-    // width: 1200px;
+    width: 1200px;
     padding-top: 8px;
   }
 }
