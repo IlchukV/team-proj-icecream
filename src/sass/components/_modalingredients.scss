@@ -144,6 +144,12 @@
     }
 }
 
+.ingredients-figure__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-ingredients__subtitle {
     font-size: 20px;
     line-height: 1.4;
