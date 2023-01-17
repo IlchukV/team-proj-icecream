@@ -49,7 +49,7 @@
 
     @include desktop {
         &:not(:last-child) {
-            padding-right: 32px;
+            margin-right: 32px;
         }
     }
 }
