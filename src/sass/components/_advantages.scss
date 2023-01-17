@@ -43,13 +43,13 @@
         margin-bottom: 0;
 
         &:not(:last-child) {
-            padding-right: 80px;
+            margin-right: 80px;
         }
     }
 
     @include desktop {
         &:not(:last-child) {
-            padding-right: 32px;
+            margin-right: 32px;
         }
     }
 }
