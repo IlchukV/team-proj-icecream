@@ -47,8 +47,8 @@
 
     &_blocks-item {
 
-        @media screen and (min-width: $mobile) and (max-width: 767.95px) {
-                width: 480px;
+        @media screen and (min-width: $mobile) and (max-width: 767px) {
+                width: 280px;
                 margin-left: auto;
                 margin-right: auto;
                 padding-bottom: 24px;
