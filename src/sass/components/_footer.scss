@@ -18,12 +18,12 @@
     }
 
     @include mobile {
-        // width: 480px;
+       
     }
 
     @include tablet {
         height: 625px;
-        // width: 768px;
+      
         flex-direction: row;
         align-items: flex-end;
     }
@@ -53,14 +53,15 @@
         line-height: 1.23;
         letter-spacing: 0.04em;
         gap: 8px;
-        margin-bottom: 32px;
+        padding-bottom: 32px;
+        margin: 0;
     }
 
     @include desktop {
         font-weight: 400;
         font-size: 30px;
         gap: 14px;
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
 }
 
