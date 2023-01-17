@@ -1,19 +1,21 @@
 .advantages {
     text-align: center;
-    padding: 60px 0 178px;
+    padding: 60px 0 60px;
     background-color: $mobile-button-color;
     position: relative;
     margin: 0 auto;
     
     @include mobile {
-            width: 480px;
+            // width: 480px;
         }
     @include tablet {
-            width: 768px;
+
+        padding: 80px 0 170px;
+        // width: 768px;
         }
     
         @include desktop {
-            width: 1200px;
+            // width: 1200px;
             height: 100%;
         }
 }

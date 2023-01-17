@@ -7,15 +7,15 @@
   margin: 0 auto;
 
   @include mobile {
-      width: 480px;
+      // width: 480px;
     }
 
   @include tablet {
-    width: 768px;
+    // width: 768px;
   }
 
   @include desktop {
-    width: 1200px;
+    // width: 1200px;
     height: 100%;
   }
 }
@@ -83,13 +83,14 @@
 .about__block {
   @media screen and (min-width:$tablet) {
     display: flex;
+    padding-bottom: 30px;
   }
-}
+} 
 
 .about__korovka {
   margin-top: 0;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 62px;
   width: 278px;
   height: 279px;
   margin-left: auto;
@@ -105,6 +106,7 @@ padding-top: 22px;
     margin-left: 17px;
     margin-top: 0px;
     margin-right: 0;
+    margin-bottom: 0;
     padding-top: 25x;
     width: 330px;
     height: 330px;

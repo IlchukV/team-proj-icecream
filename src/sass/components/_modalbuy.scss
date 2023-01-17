@@ -15,7 +15,7 @@
     border-radius: 10px;
     border: 2px solid $link-button-color;
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         width: 568px;
         padding: 32px 54px;
     }
