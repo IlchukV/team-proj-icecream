@@ -59,27 +59,6 @@ textarea {
 }
 
 
-.container {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 37px;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
-
-    @include tablet {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    @include desktop {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-}
-
 h1,
 h2,
 h3,
@@ -109,4 +88,18 @@ img {
 
 .link {
     text-decoration: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $backdrop-bg;
+    opacity: 1;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+    z-index: 9999;
+    overflow: auto;
 }

@@ -1535,46 +1535,70 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 .gallery {
   display: flex;
   justify-content: center;
+  border-radius: 38px;
 }
 
-.gallery__img {
+img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.sim-slider {
   position: absolute;
   margin-top: -32px;
-  width: 280px;
-  height: 130px;
-  background-size: contain;
-  background-image: url(/src/images/manyicecream.jpg);
-  background-repeat: no-repeat;
-  contain: contain;
+  padding: 0;
   border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media screen and (min-width: 480px) {
-  .gallery__img {
+  .sim-slider {
     width: 440px;
     height: 204px;
     margin-top: -27px;
+    border-radius: 8px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .gallery__img {
+  .sim-slider {
     width: 704px;
     height: 327px;
     margin-top: -144px;
     border-radius: 18px;
-    background-image: url(/src/images/manyicecream_tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .gallery__img {
+  .sim-slider {
     width: 1013px;
     height: 422px;
     margin-top: -98px;
     border-radius: 24px;
     background-image: url(/src/images/manyicecream-desktop.jpg);
   }
+}
+
+.sim-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+
+.sim-slider-element {
+  width: 100%;
+  transition: opacity 1s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
 }
 
 .customer-reviews {
@@ -1643,12 +1667,46 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 }
 
 .customer-reviews__photo {
-  width: 85px;
-  height: 85px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto 32px auto;
   border-radius: 50%;
   background-color: #84A178;
+  background-size: cover;
+}
+
+.customer-reviews__photo--vadim {
+  background-image: url(../images/vadim.jpg);
   background-size: contain;
+  background-position: center;
+}
+
+.customer-reviews__photo--sofia {
+  background-image: url(../images/sofia.jpg);
+}
+
+.customer-reviews__photo--nikita {
+  background-image: url(../images/nikita.jpg);
+}
+
+.customer-reviews__photo--halyna {
+  background-image: url(../images/halyna.jpg);
+}
+
+.customer-reviews__photo--ivan {
+  background-image: url(../images/ivan.jpg);
+}
+
+.customer-reviews__photo--sveta {
+  background-image: url(../images/sveta.jpg);
+}
+
+.customer-reviews__photo--dmitriy {
+  background-image: url(../images/dmitriy.jpg);
+}
+
+.customer-reviews__photo--anzhela {
+  background-image: url(../images/anzhela.jpg);
 }
 
 .customer-reviews__text {
@@ -3399,11 +3457,60 @@ body.js-menu-container.is-open {
   }
 }
 
+.backdrop {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 500ms linear, visibility 500ms linear;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .modal__buy {
+  position: absolute;
+  top: 15px;
+  left: 50%;
   width: 280px;
-  height: auto;
-  padding: 28px;
-  background-color: #fcfcfc;
+  padding: 28px 20px;
+  transform: translateX(-50%) scale(1);
+  transition: transform 500ms linear, visibility 500ms linear;
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+}
+@media screen and (min-width: 768px) {
+  .modal__buy {
+    width: 568px;
+    padding: 32px 40px;
+  }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-buy.is-hidden {
+  transform: translateX(-50%) scale(0);
+}
+
+.modal-buy__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  scale: 1;
+  transition: scale 250ms linear;
+}
+.modal-buy__close:hover, .modal-buy__close:focus {
+  scale: 1.2;
 }
 
 .buy__title {
@@ -3415,6 +3522,19 @@ body.js-menu-container.is-open {
   font-style: normal;
   font-weight: 400;
   text-align: center;
+}
+
+.products__subtitle--mobile {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-bottom: 0;
 }
 
 .products__list--mobile {
@@ -3430,9 +3550,35 @@ body.js-menu-container.is-open {
   margin-right: auto;
   margin-left: auto;
 }
-
+.products__item--mobile:nth-child(1):before {
+  box-shadow: 0px 7px 4px 0px #9CBE8F;
+}
+.products__item--mobile:nth-child(2):before {
+  box-shadow: 0px 7px 4px 0px #F8D24E;
+}
+.products__item--mobile:nth-child(3):before {
+  box-shadow: 0px 9px 1px -2px #D5753F;
+}
+.products__item--mobile:nth-child(1) {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #AEC6A5;
+  filter: drop-shadow(0px 5.26027px 19.726px 0px 8px 30px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+}
+.products__item--mobile:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #EFD478;
+  filter: drop-shadow(0px 5.26027px 19.726px 0px 8px 30px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+}
+.products__item--mobile:nth-child(3) {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #D6936D;
+  filter: drop-shadow(0px 5.26027px 19.726px 0px 8px 30px rgba(212, 20, 67, 0.1));
+  border-radius: 15px;
+}
 .products__item--mobile:not(:last-child) {
-  margin-bottom: 80px;
+  margin-bottom: 82px;
 }
 
 .products__item--mobile:before {
@@ -3449,6 +3595,7 @@ body.js-menu-container.is-open {
   transform: translateX(-50%);
 }
 
+<<<<<<< HEAD
 .products__item--mobile:nth-child(1):before {
   box-shadow: 0px 7px 4px 0px rgb(150, 175, 140);
 }
@@ -3675,3 +3822,17 @@ body.js-menu-container.is-open {
 }
 
 /*# sourceMappingURL=index.css.map */
+=======
+@media screen and (min-width: 768px) {
+  .modal__input--mobile {
+    width: 368px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal__label--buy {
+    align-items: center;
+    margin-bottom: 16px;
+  }
+}/*# sourceMappingURL=index.css.map */
+>>>>>>> main

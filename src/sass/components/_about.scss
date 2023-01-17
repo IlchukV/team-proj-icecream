@@ -7,15 +7,15 @@
   margin: 0 auto;
 
   @include mobile {
-      width: 480px;
+      // width: 480px;
     }
 
   @include tablet {
-    width: 768px;
+    // width: 768px;
   }
 
   @include desktop {
-    width: 1200px;
+    // width: 1200px;
     height: 100%;
   }
 }
@@ -83,8 +83,10 @@
 .about__block {
   @media screen and (min-width:$tablet) {
     display: flex;
+    padding-bottom: 30px;
+    justify-content: center;
   }
-}
+} 
 
 .about__korovka {
   margin-top: 0;

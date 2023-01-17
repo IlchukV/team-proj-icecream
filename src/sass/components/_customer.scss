@@ -10,11 +10,11 @@
     background-size: cover;
 
     @include mobile {
-        padding-top: 260px;
+        padding: 230px 0 290px;
     }
 
     @media screen and (max-width: 767px) {
-        max-width: $mobile;
+        // max-width: $mobile;
         @include retina {
             & {
                 background-image: url(../images/Backgroud_mobile@2x.jpg);
@@ -22,8 +22,8 @@
         }
     }
     @include tablet {
-        padding: 300px 0 350px;
-        width: $tablet;
+        padding: 250px 0 270px;
+        // width: $tablet;
         background-image: url(../images/Background_tablet.jpg);
 
         @include retina {
@@ -33,8 +33,8 @@
         }
     }
     @include desktop {
-        padding: 450px 0 180px;
-        width: $desktop;
+        padding: 450px 0 110px;
+        // width: $desktop;
         background-image: url(../images/Backgroud_desktop.jpg);
 
         @include retina {
