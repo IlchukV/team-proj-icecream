@@ -1,11 +1,10 @@
 
-
-.modal__buy {
+.modal-buy {
     position: absolute;
     top: 15px;
     left: 50%;
     width: 280px;
-    padding: 28px 20px;
+    padding: 28px;
     transform: translateX(-50%) scale(1);
     transition: transform 500ms linear, visibility 500ms linear;
     background-color: $background-modal-color;
@@ -14,7 +13,7 @@
 
     @include tablet {
         width: 568px;
-        padding: 32px 40px;
+        padding: 32px 54px;
     }
 }
 
@@ -23,7 +22,6 @@
     visibility: hidden;
     pointer-events: none;
 }
-
 .modal-buy.is-hidden {
     transform: translateX(-50%) scale(0);
 }
@@ -39,130 +37,215 @@
     background-color: transparent;
     scale: 1;
     transition: scale 250ms linear;
-
     &:hover,
     &:focus {
         scale: 1.2;
     }
 }
-// --------------------------//------------------//
-.buy__title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: $text-main-color;
-    font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
 
+.modal-buy__title {
+    margin-bottom: 20px;
+    font-family: 'Seymour One';
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
+    color: $text-main-color;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
 }
 
-.products__subtitle--mobile {
-    font-family: 'Montserrat';
-    font-style: normal;
+
+.buy-checklist {
+    padding-top: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 31px;
+    @media screen and (max-width:767px) {
+        width: 132px;        
+    }
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-bottom: 40px;   
+    }
+}
+
+.buy-checklist__item {
+    width: 100%;
+    @media screen and (min-width:768px) {
+        width: calc((100% - 64px) / 3);
+    }
+}
+
+.buy-checklist__item:not(:last-child) {
+    margin-bottom: 82px;
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+        margin-right: 32px;
+    }  
+}
+
+.buy-checklist__label {
+    display: block;
+    position: relative;
+    height: 136px;
+    padding-top: 95px;
+    padding-bottom: 20px;
+    text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-    text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: $text-main-color;
-    margin-bottom: 0;
-}
-
-.products__list--mobile {
-    width: auto;
-    padding-top: 83px;
-    padding-bottom: 40px;
-}
-
-.products__item--mobile {
-    padding: 95px 13px 21px 13px;
-    width: 136px;
-    min-height: 136px;
-    margin-right: auto;
-    margin-left: auto;
-
-    &:nth-child(1):before {
-        box-shadow: 0px 7px 4px 0px $figure-color;
-    }
-    &:nth-child(2):before {
-        box-shadow: 0px 7px 4px 0px $link-button-color;
-    }
-    &:nth-child(3):before {
-        box-shadow: 0px 9px 1px -2px #D5753F;
-    }
-    &:nth-child(1) {
-        background-color: rgba(0, 0, 0, 0);
-        border: 2px solid $icecream-card-color;
-        filter: drop-shadow(0px 5.26027px 19.726px $box-shadow);
-        border-radius: 15px;
-    }
-    &:nth-child(2) {
-        background-color: rgba(0, 0, 0, 0);
-        border: 2px solid
-        $icecoffee-card-color;
-        filter: drop-shadow(0px 5.26027px 19.726px $box-shadow);
-        border-radius: 15px;
-    }
-    &:nth-child(3) {
-        background-color: rgba(0, 0, 0, 0);
-        border: 2px solid
-        $milkshakes-card-color;
-        filter: drop-shadow(0px 5.26027px 19.726px $box-shadow);
-        border-radius: 15px;
-    }
-   
-}
-
-
-.products__item--mobile:before {
-    content: "";
     
-    width: 132px;
-    height: 132px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-radius: 50%;
-    display: block;
+    border-radius: 15px;
+    border: 2px solid #96AF8C;
+    box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    border-radius: 15px;
+    background-color: $background-modal-color;
+    transition: background-color 350ms ease-in-out;
+}
+
+.buy-checklist__label--yellow {
+    border-color: $icecoffee-card-color;
+}
+
+.buy-checklist__label--brown {
+    border-color: $milkshakes-card-color;
+}
+
+
+.buy-checklist__label::before {
+    content: '';
     position: absolute;
+    width: 132px;
+    height: 139px;
     top: -63px;
     left: 50%;
     transform: translateX(-50%);
-    
-    
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
 }
 
-// -------------------------Modal from Franshize-------//
-.modal__input--mobile {
-    @include tablet {
-        width: 368px;
+.buy-checklist__label::before {
+    background-image: url(../images/dobleice_modal.png), $modal-gradient;
+    @include retina {
+        background-image: url(../images/dobleice_modal@2x.png), $modal-gradient;
     }
+    background-color: #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
 }
-.modal__label--buy {
-    @include tablet {
+
+.buy-checklist__label--yellow::before {
+    background-image: url(../images/milkshake_modal.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    @include retina {
+        background-image: url(../images/milkshake_modal@2x.png), linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
+    }
+    background-color: #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+}
+
+.buy-checklist__label--brown::before {
+    background-image: url(../images/creambrule_modal.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    @include retina {
+        background-image: url(../images/creambrule_modal@2x.png), linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
+    }
+    background-color: #D9D9D9;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.buy-checklist__input:checked + .buy-checklist__label {
+    background-color: $icecream-card-color;
+}
+.buy-checklist__input--yellow:checked + .buy-checklist__label {
+    background-color: $icecoffee-card-color;
+}
+.buy-checklist__input--brown:checked + .buy-checklist__label {
+    background-color: $milkshakes-card-color;
+}
+
+
+
+.buy-form__inputs {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 16px;
+}
+
+.buy-form__input, .buy-form__comment {
+    width: 224px;
+    padding: 8px 12px;
+
+    background-color: $input-color;
+    color: $text-main-color;
+    border: 1px solid $background-color-secondary;
+    border-radius: 10px;
+    transition: border-color 250ms linear;
+    &:hover, &:focus {
+        outline-color: $link-button-color;
+        border-color: $link-button-color;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 368px;
+        padding: 11px 16px;
     }
 }
 
+.buy-form__input {
+    height: 32px;
+    margin-bottom: 12px;
+    &:not(:focus):not(:placeholder-shown):required:invalid {
+        background-color: $input-invalid-color;
+        border-color: $error-color;
+    }
+    @media screen and (min-width:768px) {
+        height: 42px;    
+        margin-bottom: 16px;    
+    }
+}
 
+.buy-form__comment { 
+    height: 65px;
+    resize: none;
+    margin-bottom: 26px;
 
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+        height: 84px;
+    }
+}
 
+.buy-form__submit {
+    width: 114px;
+    height: 42px;
 
+    background-color: $link-button-color;
+    border-radius: 10px;
+    border: 1px solid $link-button-color;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    transition: background-color 250ms linear, border-color 250ms linear, color 250ms linear;
+    &:hover,
+    &:focus {
+        background-color: $hover-button-color;
+        border-color: $hover-button-color;
+    }
+    &:focus {
+        color: $text-title-color;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    @media screen and (min-width:768px) {
+        width: 121px;
+        font-style: 14px;
+    }
+}
 
 
 
