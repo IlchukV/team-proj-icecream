@@ -88,6 +88,11 @@
     }  
 }
 
+.buy-checklist__input:focus+.buy-checklist__label,
+.buy-checklist__input:hover+.buy-checklist__label {
+    box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1)), (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+
 .buy-checklist__label {
     display: block;
     position: relative;
@@ -103,10 +108,9 @@
     
     border-radius: 15px;
     border: 2px solid #96AF8C;
-    box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
     border-radius: 15px;
     background-color: $background-modal-color;
-    transition: background-color 350ms ease-in-out;
+    transition: background-color 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .buy-checklist__label--yellow {
