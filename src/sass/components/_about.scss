@@ -26,7 +26,7 @@
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
   margin-right: auto;
   margin-left: auto;
 
@@ -57,7 +57,8 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding-bottom: 32px;
+  padding-bottom: 0;
+  margin-bottom: 32px;
 
 
   @media screen and (max-width: $mobile) {
@@ -70,13 +71,13 @@
     font-size: 34px;
     line-height: 43px;
     letter-spacing: 0.06em;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
   }
 
   @media screen and (min-width:$desktop) {
     font-size: 36px;
     line-height: 45px;
-    padding-bottom: 82px;
+    margin-bottom: 82px;
   }
 }
 
@@ -139,21 +140,21 @@ padding-top: 22px;
   font-weight: 400;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   @media screen and (min-width:$mobile) {
-    padding-bottom: 24px;
+    margin-bottom: 24px;
 
   }
 
   @media screen and (min-width:$tablet) {
-    padding-bottom: 32px;
+    margin-bottom: 32px;
     margin-left: 0;
     width: 334px;
   }
 
   @media screen and (min-width:$desktop) {
-    padding-bottom: 54px;
+    margin-bottom: 54px;
     width: 463px;
     align-items: center;
   }
