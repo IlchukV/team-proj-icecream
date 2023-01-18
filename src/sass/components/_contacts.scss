@@ -10,18 +10,16 @@
         position: absolute;
         top: -270px;
 
-        @media screen and (min-width: $tablet)  {
+        @media screen and (min-width: $tablet) {
             position: absolute;
             top: -260px;
         }
 
         @media screen and (min-width: $desktop) {
             position: absolute;
-<<<<<<< HEAD
-            top: -410px;
-=======
-            top: -70px;
->>>>>>> main
+            <<<<<<< HEAD top: -410px;
+            =======top: -70px;
+            >>>>>>>main
         }
     }
 
@@ -44,7 +42,7 @@
 
     &_blocks-item {
         @media screen and (max-width: 767.95px) {
-            // width: 280px;
+            width: 280px;
             margin-left: auto;
             margin-right: auto;
             padding-bottom: 24px;
@@ -63,14 +61,12 @@
             padding-bottom: 40px;
         }
 
-<<<<<<< HEAD
-        width: 368px;
+        <<<<<<< Updated upstream <<<<<<< HEAD width: 368px;
         background-color: $background-color-contacts;
-=======
-        // width: 368px;
-        background-color: #FFFFFF;
->>>>>>> main
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        ======= // width: 368px;
+        =======width: 368px;
+        >>>>>>>Stashed changes background-color: #FFFFFF;
+        >>>>>>>main box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding-top: 40px;
         padding-bottom: 40px;
