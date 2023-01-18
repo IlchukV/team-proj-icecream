@@ -1,32 +1,30 @@
 .advantages {
-<<<<<<< HEAD
-    &_container {
-        @include tablet {
-            width: 768px;
-=======
-    text-align: center;
-    padding: 60px 0 60px;
-    background-color: $mobile-button-color;
-    position: relative;
-    margin: 0 auto;
-    
-    @include mobile {
+    &_container @include tablet {
+        width: 768px;
+
+        text-align: center;
+        padding: 60px 0 60px;
+        background-color: $mobile-button-color;
+        position: relative;
+        margin: 0 auto;
+
+        @include mobile {
             // width: 480px;
         }
-    @include tablet {
 
-        padding: 80px 0 170px;
-        // width: 768px;
->>>>>>> main
+        @include tablet {
+
+            padding: 80px 0 170px;
+            // width: 768px;
+
         }
 
         @include desktop {
-<<<<<<< HEAD
+
             width: 1200px;
-=======
+
             // width: 1200px;
             height: 100%;
->>>>>>> main
         }
 
         text-align: center;
@@ -66,122 +64,132 @@
             &:not(:last-child) {
                 padding-right: 32px;
             }
-        }
-    }
 
-    &__thumb-cow-icon::before {
-        content: " ";
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-image: url(/src/images/cow.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: 16px;
-
-        @include tablet {
-            margin-bottom: 32px;
+            &:not(:last-child) {
+                margin-right: 80px;
+            }
         }
 
         @include desktop {
-            margin-bottom: 40px;
-        }
-    }
-
-    &__thumb-weight-icon::before {
-        content: " ";
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-image: url(/src/images/weight.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: 16px;
-
-        @include tablet {
-            margin-bottom: 32px;
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
         }
 
-        @include desktop {
-            margin-bottom: 40px;
-        }
-    }
+        &__thumb-cow-icon::before {
+            content: " ";
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url(/src/images/cow.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 16px;
 
-    &__thumb-weight-icon::before {
-        content: " ";
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-image: url(/src/images/weight.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: 16px;
+            @include tablet {
+                margin-bottom: 32px;
+            }
 
-        @include tablet {
-            margin-bottom: 32px;
-        }
-
-        @include desktop {
-            margin-bottom: 40px;
-        }
-    }
-
-    &__thumb-ice-icon::before {
-        content: " ";
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-image: url(/src/images/ice.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-bottom: 16px;
-
-        @include tablet {
-            margin-bottom: 32px;
+            @include desktop {
+                margin-bottom: 40px;
+            }
         }
 
-        @include desktop {
-            margin-bottom: 40px;
-        }
-    }
+        &__thumb-weight-icon::before {
+            content: " ";
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url(/src/images/weight.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 16px;
 
-    &__number {
-        margin-bottom: 16px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.22;
-        letter-spacing: 0.04em;
-        color: #FCFCFC;
+            @include tablet {
+                margin-bottom: 32px;
+            }
 
-        @include tablet {
-            margin-bottom: 12px;
-        }
-
-        @include desktop {
-            margin-bottom: 12px;
-        }
-    }
-
-    &__preTitle {
-        display: inline-flex;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.66;
-        color: $text-title-color;
-        width: 230px;
-
-        @include tablet {
-            width: 152px;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.71;
+            @include desktop {
+                margin-bottom: 40px;
+            }
         }
 
-        @include desktop {
-            width: 368px;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.75;
+        &__thumb-weight-icon::before {
+            content: " ";
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url(/src/images/weight.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 16px;
+
+            @include tablet {
+                margin-bottom: 32px;
+            }
+
+            @include desktop {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__thumb-ice-icon::before {
+            content: " ";
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-image: url(/src/images/ice.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-bottom: 16px;
+
+            @include tablet {
+                margin-bottom: 32px;
+            }
+
+            @include desktop {
+                margin-bottom: 40px;
+            }
+        }
+
+        &__number {
+            margin-bottom: 16px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.22;
+            letter-spacing: 0.04em;
+            color: #FCFCFC;
+
+            @include tablet {
+                margin-bottom: 12px;
+            }
+
+            @include desktop {
+                margin-bottom: 12px;
+            }
+        }
+
+        &__preTitle {
+            display: inline-flex;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.66;
+            color: $text-title-color;
+            width: 230px;
+
+            @include tablet {
+                width: 152px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.71;
+            }
+
+            @include desktop {
+                width: 368px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.75;
+            }
         }
     }
 }

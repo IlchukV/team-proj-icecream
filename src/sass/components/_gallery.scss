@@ -5,6 +5,11 @@
     border-radius: 38px;
 }
 
+.gallery-title {
+    visibility: hidden;
+        position: absolute;
+}
+
 img {
     width: 100%;
     padding: 0;

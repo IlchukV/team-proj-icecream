@@ -8,345 +8,353 @@
 
     &_list {
         position: absolute;
-        top: -270px;
+        top: -370px;
+
 
         @media screen and (min-width: $tablet) {
             position: absolute;
-            top: -260px;
-        }
 
-        @media screen and (min-width: $desktop) {
-            position: absolute;
-            <<<<<<< HEAD top: -410px;
-            =======top: -70px;
-            >>>>>>>main
-        }
-    }
+            @media screen and (min-width: $mobile) {
 
-    &_list-item {
-        @media screen and (max-width: 767.95px) {
-            display: block;
-            margin-bottom: 24px;
-        }
+                top: -260px;
+            }
 
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-            gap: 16px;
-            margin-bottom: 40px;
-        }
+            @media screen and (min-width: $tablet) {
 
-        display: flex;
-        justify-content: center;
-        gap: 32px;
-        margin-bottom: 60px;
-    }
+                top: -260px;
+            }
 
-    &_blocks-item {
-        @media screen and (max-width: 767.95px) {
-            width: 280px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 24px;
-            padding-left: 32px;
-        }
-
-        &:not(:last-child) {
-            @media screen and (max-width: 767.95px) {
-                margin-bottom: 20px;
+            @media screen and (min-width: $desktop) {
+                position: absolute;
+                top: -410px;
+                top: -70px;
+                top: -70px;
             }
         }
 
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-            width: 224px;
-            padding-left: 24px;
+        &_list-item {
+            @media screen and (max-width: 767.95px) {
+                display: block;
+                margin-bottom: 24px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+                gap: 16px;
+                margin-bottom: 40px;
+                justify-content: center;
+            }
+
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+
+        &_blocks-item {
+
+            @media screen and (min-width: $mobile) and (max-width: 767px) {
+                width: 280px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 24px;
+                padding-left: 32px;
+            }
+
+
+            &:not(:last-child) {
+                @media screen and (max-width: 767px) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            @media screen and (min-width: $tablet) and (max-width:1199px) {
+                width: 224px;
+                padding-left: 24px;
+                padding-bottom: 40px;
+            }
+
+            background-color: #FFFFFF;
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            border-radius: 24px;
+            padding-top: 40px;
             padding-bottom: 40px;
+            padding-left: 40px;
         }
 
-        <<<<<<< Updated upstream <<<<<<< HEAD width: 368px;
-        background-color: $background-color-contacts;
-        ======= // width: 368px;
-        =======width: 368px;
-        >>>>>>>Stashed changes background-color: #FFFFFF;
-        >>>>>>>main box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-left: 40px;
-    }
+        @include desktop {
+            .contacts_blocks-item:hover {
+                box-shadow: 0px 0px 21px 10px rgba(22, 210, 210, 0.38);
+                transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
 
-    @include desktop {
-        .contacts_blocks-item:hover {
-            box-shadow: 0px 0px 21px 10px rgba(22, 210, 210, 0.38);
-            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &_item-type {
+            @media screen and (max-width: 767.95px) {
+                margin-bottom: 20px;
+                font-size: 12px;
+                line-height: 1.2;
+            }
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            margin-bottom: 32px;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.4;
+
+            border-radius: 6px;
+            background-color: $link-button-color;
+            color: $text-main-color;
+            height: 30px;
+            width: 76px;
+
+            &-food {
+                width: 148px;
+            }
+        }
+
+        &_text {
+            @media screen and (max-width: 767.95px) {
+                font-size: 12px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.66;
+            color: $text-main-color;
+            margin-bottom: 8px;
+        }
+
+        &_address {
+            @media screen and (max-width: 767.95px) {
+                width: 195px;
+                padding-bottom: 24px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+                width: 173px;
+            }
+
+            font-style: normal;
+            width: 288px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid rgba(225, 225, 225, 1);
+        }
+
+        &_link {
+            @media screen and (max-width: 767.95px) {
+                font-size: 12px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+                font-size: 14px;
+            }
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.83;
+            text-decoration: none;
+
+
+            color: $milkshakes-card-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
-
-    &_item-type {
+    .work-schedule {
         @media screen and (max-width: 767.95px) {
-            margin-bottom: 20px;
-            font-size: 12px;
-            line-height: 1.2;
+            padding-top: 24px;
         }
 
+        padding-top: 32px;
+    }
+
+    .schedule {
+        margin-bottom: 12px;
+        font-weight: 500;
+        color: $text-main-color;
+
+        @media screen and (max-width: 1199.95px) {
+            margin-bottom: 8px;
+        }
+
+        &_days {
+            color: $text-main-color;
+            font-size: 16px;
+            line-height: 1.82;
+
+            @media screen and (max-width: 767.95px) {
+                font-size: 12px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+                font-size: 14px;
+            }
+        }
+
+        &_time {
+            font-size: 16px;
+            line-height: 1.86;
+
+            color: $color-time-contacts;
+
+            @media screen and (max-width: 767.95px) {
+                font-size: 12px;
+            }
+
+            @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .company_contacts {
+        border-top: 1px solid $border-company-contacts;
+        width: 288px;
+        margin-bottom: 4px;
+        padding-top: 32px;
+
+        @media screen and (max-width: 767.95px) {
+            width: 195px;
+            padding-top: 24px;
+            margin-bottom: 6px;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            width: 170px;
+        }
+    }
+
+    .company_tel {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text-main-color;
+        text-decoration: none;
+
+        @media screen and (max-width: 767.95px) {
+            font-size: 12px;
+            line-height: 1.58;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+
+    .company_mail {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $text-main-color;
+        text-decoration: none;
+
+        @media screen and (max-width: 767.95px) {
+            font-size: 12px;
+            line-height: 1.58;
+        }
+
+        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+
+    .contacts-button {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        text-align: center;
-        margin-bottom: 32px;
 
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.4;
-
-        border-radius: 6px;
-        background-color: $link-button-color;
-        color: $text-main-color;
-        height: 30px;
-        width: 76px;
-
-        &-food {
-            width: 148px;
-        }
-    }
-
-    &_text {
         @media screen and (max-width: 767.95px) {
-            font-size: 12px;
+            flex-direction: column;
+            text-align: center;
         }
 
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
+
+        &_locations {
+            width: 196px;
+            height: 42px;
+            border: 0;
+            border-radius: 10px;
+            background-color: $link-button-color;
+            font-weight: 600;
             font-size: 14px;
-            margin-bottom: 12px;
+            line-height: 1.29;
+            text-align: center;
         }
 
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.66;
-        color: $text-main-color;
-        margin-bottom: 8px;
-    }
 
-    &_address {
-        @media screen and (max-width: 767.95px) {
-            width: 195px;
-            padding-bottom: 24px;
-        }
-
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-            width: 173px;
-        }
-
-        font-style: normal;
-        width: 288px;
-        padding-bottom: 32px;
-        border-bottom: 1px solid rgba(225, 225, 225, 1);
-    }
-
-    &_link {
-        @media screen and (max-width: 767.95px) {
-            font-size: 12px;
-        }
-
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-            font-size: 14px;
-        }
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.83;
-        text-decoration: none;
-
-
-        color: $milkshakes-card-color;
-
-        &:hover {
-            text-decoration: underline;
+        &_icon-locations {
+            fill: currentColor;
         }
     }
-}
 
-.work-schedule {
-    @media screen and (max-width: 767.95px) {
-        padding-top: 24px;
+    .contacts-button_locations:hover {
+        background-color: $hover-button-color;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    padding-top: 32px;
-}
-
-.schedule {
-    margin-bottom: 12px;
-    font-weight: 500;
-    color: $text-main-color;
-
-    @media screen and (max-width: 1199.95px) {
-        margin-bottom: 8px;
+    .contacts-button_locations:focus {
+        background-color: $hover-button-color;
+        color: $background-color-contacts;
+        outline: none;
     }
 
-    &_days {
-        color: $text-main-color;
-        font-size: 16px;
-        line-height: 1.82;
+    .contacts-button_icon-locations:focus {
+        fill: $background-color-contacts;
+    }
+
+    .button_locations {
+        margin-right: 16px;
 
         @media screen and (max-width: 767.95px) {
-            font-size: 12px;
-        }
-
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-            font-size: 14px;
+            margin-right: 0;
+            margin-bottom: 16px;
         }
     }
 
-    &_time {
-        font-size: 16px;
-        line-height: 1.86;
-
-        color: $color-time-contacts;
-
-        @media screen and (max-width: 767.95px) {
-            font-size: 12px;
-        }
-
-        @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-            font-size: 14px;
-        }
-    }
-}
-
-.company_contacts {
-    border-top: 1px solid $border-company-contacts;
-    width: 288px;
-    margin-bottom: 4px;
-    padding-top: 32px;
-
-    @media screen and (max-width: 767.95px) {
-        width: 195px;
-        padding-top: 24px;
-        margin-bottom: 6px;
-    }
-
-    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-        width: 170px;
-    }
-}
-
-.company_tel {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: $text-main-color;
-    text-decoration: none;
-
-    @media screen and (max-width: 767.95px) {
-        font-size: 12px;
-        line-height: 1.58;
-    }
-
-    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-}
-
-.company_mail {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: $text-main-color;
-    text-decoration: none;
-
-    @media screen and (max-width: 767.95px) {
-        font-size: 12px;
-        line-height: 1.58;
-    }
-
-    @media screen and (min-width: $tablet) and (max-width:1199.95px) {
-        font-size: 14px;
-        line-height: 1.5;
-    }
-}
-
-.contacts-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    @media screen and (max-width: 767.95px) {
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    &_locations {
+    .contacts-button_franchise {
         width: 196px;
         height: 42px;
-        border: 0;
         border-radius: 10px;
-        background-color: $link-button-color;
+        border: 2px solid $link-button-color;
+        background-color: $background-color-secondary;
         font-weight: 600;
         font-size: 14px;
         line-height: 1.29;
         text-align: center;
+
+        .contacts-button_icon-franchise {
+            fill: currentColor;
+        }
     }
 
-
-    &_icon-locations {
-        fill: currentColor;
+    .contacts-button_franchise:hover {
+        border-color: $hover-button-color;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
 
-.contacts-button_locations:hover {
-    background-color: $hover-button-color;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-button_locations:focus {
-    background-color: $hover-button-color;
-    color: $background-color-contacts;
-    outline: none;
-}
-
-.contacts-button_icon-locations:focus {
-    fill: $background-color-contacts;
-}
-
-.button_locations {
-    margin-right: 16px;
-
-    @media screen and (max-width: 767.95px) {
-        margin-right: 0;
-        margin-bottom: 16px;
+    .contacts-button_franchise:focus {
+        border: 2px solid $hover-button-color;
+        outline: none;
+        color: $background-color-contacts;
     }
-}
 
-.contacts-button_franchise {
-    width: 196px;
-    height: 42px;
-    border-radius: 10px;
-    border: 2px solid $link-button-color;
-    background-color: $background-color-secondary;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-
-    .contacts-button_icon-franchise {
-        fill: currentColor;
+    .contacts-button_icon-franchise:focus {
+        fill: $background-color-contacts
     }
-}
-
-.contacts-button_franchise:hover {
-    border-color: $hover-button-color;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-button_franchise:focus {
-    border: 2px solid $hover-button-color;
-    outline: none;
-    color: $background-color-contacts;
-}
-
-.contacts-button_icon-franchise:focus {
-    fill: $background-color-contacts
-}
